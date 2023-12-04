@@ -1,0 +1,177 @@
+:root {
+  --main-color: #1f4280;
+  --light-color: #f5f7fa;
+  --grey-color: #4d4d4d;
+  --muted-grey-color: #717171;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* Circle Shape In The Background */
+body::before {
+  content: "";
+  position: absolute;
+  top: -89px;
+  left: -130px;
+  width: 629px;
+  height: 629px;
+  border-radius: 629px;
+  background: var(--light-color);
+  z-index: -1;
+}
+/* Main Blue Button */
+.btn-main {
+  border-radius: 8px;
+  background: var(--main-color);
+  color: white;
+  padding: 0.7em 1.3em;
+  border: none;
+}
+.light-bg {
+  background-color: var(--light-color);
+}
+
+/* Navbar */
+nav a.nav-link {
+  color: #18191f;
+}
+
+nav .nav-link:hover,
+nav .nav-link.active {
+  color: var(--main-color);
+}
+nav .login-btn,
+nav .login-btn:hover {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  padding: 0.7em 1.3em;
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) var(--main-color);
+}
+
+/* Sections */
+.sec-title {
+  color: var(--grey-color);
+}
+
+.sec-description {
+  color: var(--muted-grey-color);
+  line-height: 24px;
+}
+
+/* property */
+
+#sec-3 .property-card {
+  margin-bottom: 8rem;
+}
+
+#sec-3 a,
+#sec-3 .prop-details,
+#sec-3 p.property-num {
+  color: var(--main-color);
+}
+
+#sec-3 .prop-details {
+  background: linear-gradient(
+      0deg,
+      rgba(31, 66, 128, 0.08) 0%,
+      rgba(31, 66, 128, 0.08) 100%
+    ),
+    #fff;
+}
+
+#sec-3 span {
+  border-color: var(--main-color) !important;
+}
+/* Section 5 */
+#sec-5 .navy-txt {
+  color: var(--main-color);
+}
+#sec-5 .stat-item svg {
+  color: var(--main-color);
+  font-size: 2em;
+}
+#sec-5 .stat-item p:first-child {
+  color: var(--grey-color);
+}
+#sec-5 .stat-item p:last-child {
+  color: var(--muted-grey-color);
+}
+
+/* Accordion */
+#sec-8 .accordion-head h2 {
+  color: var(--grey-color);
+}
+#sec-8 .accordion-head p {
+  color: var(--muted-grey-color);
+}
+#sec-8 .accordion-item:has(.show) {
+  border: 2px solid var(--main-color);
+  box-shadow: 0px 6px 16px 0px rgba(31, 66, 128, 0.16);
+  border-radius: 14px !important;
+}
+#sec-8 .accordion-item {
+  border: none;
+  margin-bottom: 1em;
+}
+
+#sec-8 .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+#sec-8 .accordion-button.collapsed {
+  border-radius: 18px !important;
+  background: white;
+  box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+  padding-block: 3em;
+}
+
+#sec-8 .accordion-button:not(.collapsed)::after {
+  z-index: 0;
+  border-color: transparent transparent transparent white;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #263238;
+  color: var(--light-color);
+}
+footer a,
+footer a:hover {
+  color: var(--light-color);
+}
+
+footer .social svg {
+  background-color: #3c464c;
+  color: white !important;
+  padding: 10px;
+  border-radius: 50px;
+}
+footer ul li {
+  margin-bottom: 12px;
+}
+footer .sub-form input,
+footer .sub-form input:focus {
+  background-color: #515b60;
+}
+
+footer .sub-form input::placeholder {
+  color: #d9dbe1;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 767px) {
+  /* Add your mobile-specific styles here */
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Add your tablet-specific styles here */
+}
+
+/* Large screen breakpoint */
+@media (min-width: 992px) {
+  /* Add your large screen-specific styles here */
+}
