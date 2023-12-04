@@ -27,6 +27,13 @@ body::before {
   padding: 0.7em 1.3em;
   border: none;
 }
+.second-btn {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  padding: 0.7em 1.3em;
+}
 .light-bg {
   background-color: var(--light-color);
 }
@@ -39,12 +46,6 @@ nav a.nav-link {
 nav .nav-link:hover,
 nav .nav-link.active {
   color: var(--main-color);
-}
-nav .login-btn,
-nav .login-btn:hover {
-  border: 1px solid var(--main-color);
-  color: var(--main-color);
-  padding: 0.7em 1.3em;
 }
 .navbar-toggler:focus {
   box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) var(--main-color);
@@ -66,13 +67,13 @@ nav .login-btn:hover {
   margin-bottom: 8rem;
 }
 
-#sec-3 a,
-#sec-3 .prop-details,
-#sec-3 p.property-num {
+a,
+.prop-details,
+p.property-num {
   color: var(--main-color);
 }
 
-#sec-3 .prop-details {
+.prop-details {
   background: linear-gradient(
       0deg,
       rgba(31, 66, 128, 0.08) 0%,
@@ -133,6 +134,37 @@ nav .login-btn:hover {
   color: white;
 }
 
+/* Explore page */
+.breadcrumb .current {
+  color: var(--main-color);
+}
+.prop-row {
+  margin-bottom: 8rem;
+}
+.form-section {
+  border-radius: 8px;
+  background: var(--White, #fff);
+  box-shadow: 4px 4px 24px 0px rgba(171, 190, 209, 0.24);
+}
+.form-heading {
+  color: var(--main-color);
+}
+form label {
+  color: #1e293b;
+}
+form input,
+form select {
+  padding: 16px !important;
+  border-radius: 8px !important;
+}
+form input::placeholder,
+select::placeholder {
+}
+input:focus,
+select:focus {
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: none !important;
+}
 /* Footer */
 footer {
   background-color: #263238;
@@ -163,7 +195,12 @@ footer .sub-form input::placeholder {
 
 /* Mobile breakpoint */
 @media (max-width: 767px) {
-  /* Add your mobile-specific styles here */
+  .prop-row {
+    margin-bottom: 3rem;
+  }
+  .prop-row .property-card {
+    margin-bottom: 8rem;
+  }
 }
 
 /* Tablet breakpoint */
