@@ -46,6 +46,81 @@ body::before {
   width: fit-content;
 }
 
+/* login and signup */
+
+.nav-tabs {
+  border-bottom: none !important;
+}
+
+.login-txt {
+  color: #6f6c90;
+}
+
+.login-title {
+  color: #170f49;
+}
+
+.otp-input {
+  width: 50px;
+  padding: 10px;
+  margin: 0 10px;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* pb */
+.progress-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  border-radius: 10px;
+}
+
+.step-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.step {
+  position: relative;
+  font-size: 0.9em;
+}
+
+.step-labels span:first-child::after,
+.step-labels span:last-child::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(-37px / 2 - 10px);
+  width: 25px;
+  height: 25px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+}
+.step-labels span:first-child::after {
+  border: 6px solid #1f4280;
+}
+
+.step-labels span:last-child::after {
+  left: auto;
+  right: 0;
+}
+
+.active-step::after {
+  background-color: var(--main-color, #1f4280);
+}
 /* Navbar */
 nav a.nav-link {
   color: #18191f;
@@ -58,7 +133,21 @@ nav .nav-link.active {
 .navbar-toggler:focus {
   box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) var(--main-color);
 }
-
+.lang-btn {
+  border: none;
+  background-color: white;
+  color: var(--main-color);
+  border-radius: 50%;
+  height: 40px;
+  padding: 1em;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-inline-start: 1em;
+  border: 1px solid var(--main-color);
+}
 /* Sections */
 .sec-title {
   color: var(--grey-color);
@@ -95,7 +184,7 @@ a,
   border-color: var(--main-color) !important;
 }
 /* Section 5 */
-#sec-5 .navy-txt {
+.navy-txt {
   color: var(--main-color);
 }
 #sec-5 .stat-item svg {
@@ -175,7 +264,7 @@ a,
   color: #808080;
 }
 .status {
-  background-color: #f5f7fa;
+  background-color: var(--light-color);
   padding: 3em;
   border-radius: 12px;
 }
@@ -207,6 +296,73 @@ a,
 }
 #days {
   color: var(--main-color);
+}
+/* User */
+#dropdownMenuButton,
+.dropdown-menu {
+  background: none;
+  color: var(--main-color);
+  border-radius: 8px;
+  border: 1px solid var(--main-color);
+  box-shadow: 0px 6px 16px 0px rgba(31, 66, 128, 0.16);
+}
+.dropdown-menu .dropdown-item {
+  color: var(--main-color);
+}
+/* user data */
+.user-data {
+  margin-top: 15em;
+}
+.user-data .sidebar {
+  border-radius: 8px 0px 0px 8px;
+  box-shadow: 4px 4px 24px 0px rgba(171, 190, 209, 0.24);
+}
+
+.user-data .nav a {
+  color: var(--main-color);
+}
+.user-data h3:first-child {
+  color: var(--main-color);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--main-color);
+}
+.user-data .content {
+  border-radius: 0px 8px 8px 0px;
+  box-shadow: 4px 4px 24px 0px rgba(171, 190, 209, 0.24);
+}
+.user-data-footer {
+  background: var(--light-color);
+}
+.user-data .investment-content table th {
+  background-color: var(--blue-color);
+  padding: 0.5em;
+  color: white;
+}
+.user-data table {
+  width: 100%;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.investment-content th:first-child {
+  border-radius: 8px 0px 0px 0px;
+}
+
+.investment-content thead th:last-child {
+  border-radius: 0px 8px 0px 0px;
+}
+
+table th,
+table td {
+  border: 1px solid rgba(31, 66, 128, 0.16);
+  padding: 0.5em;
+}
+table thead th {
+  border-top: none;
 }
 
 form label {
@@ -261,14 +417,17 @@ footer .sub-form input::placeholder {
   .prop-row .property-card {
     margin-bottom: 8rem;
   }
+  /* user */
+  #dropdownMenuButton,
+  .dropdown-menu {
+    width: auto !important;
+  }
 }
 
 /* Tablet breakpoint */
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Add your tablet-specific styles here */
 }
 
 /* Large screen breakpoint */
 @media (min-width: 992px) {
-  /* Add your large screen-specific styles here */
 }

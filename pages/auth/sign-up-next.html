@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Haseel Login</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 bg-white">
+          <div class="p-4">
+            <div class="d-flex flex-column justify-content-center h-100 p-md-5">
+              <a class="navbar-brand mb-5" href="#">
+                <img
+                  src="../../assets/images/logo.svg"
+                  alt="Logo"
+                  class="w-50"
+                />
+              </a>
+              <h3 class="fw-bold mb-5 login-title">
+                <i class="fa-solid fa-arrow-left me-3"></i>Sign Up
+              </h3>
+              <div class="progress-container">
+                <div class="progress">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="step-labels">
+                  <span class="step active-step">Entry</span>
+
+                  <span class="step">Verification</span>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Account Type</label>
+                <br />
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="accountType"
+                    id="retailSale"
+                  />
+                  <label class="form-check-label" for="retailSale">
+                    Retail Sale
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="accountType"
+                    id="competent"
+                  />
+                  <label class="form-check-label" for="competent">
+                    Competent
+                  </label>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="currentAccount" class="form-label"
+                  >Current Account</label
+                >
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  id="currentAccount"
+                  placeholder="Current account"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="incomeDetails" class="form-label"
+                  >Income Details</label
+                >
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  id="incomeDetails"
+                  placeholder="Income details"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="additionalWealthDetails" class="form-label"
+                  >Additional Wealth Details</label
+                >
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  id="additionalWealthDetails"
+                  placeholder="Additional wealth details"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Risk Acceptance</label>
+                <br />
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="riskAcceptance"
+                    id="riskYes"
+                  />
+                  <label class="form-check-label" for="riskYes"> Yes </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="riskAcceptance"
+                    id="riskNo"
+                  />
+                  <label class="form-check-label" for="riskNo"> No </label>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="addressArabic" class="form-label"
+                  >Address in Arabic</label
+                >
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  id="addressArabic"
+                  placeholder="Address in Arabic"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="addressEnglish" class="form-label"
+                  >Address in English</label
+                >
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  id="addressEnglish"
+                  placeholder="Address in English"
+                />
+              </div>
+              <a href="sign-up.success.html">
+                <button class="btn-main mb-3 mt-4 w-100" type="submit">
+                  Next
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 d-none d-md-block p-0">
+          <div
+            class="w-100 h-100 light-bg d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              src="../../assets/images/login.png"
+              class="w-50"
+              alt="Decorative Image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js.map"></script>
+    <script src="../../Js/all.min.js"></script>
+    <script src="../../js/script.js"></script>
+  </body>
+</html>

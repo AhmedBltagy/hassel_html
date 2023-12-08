@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Haseel Invest</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="../../css/style.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="../../css/all.min.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets/images/logo.svg" alt="Logo" />
+          <img src="../../assets/images/logo.svg" alt="Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -56,14 +56,32 @@
               <a class="nav-link" href="#">FAQs</a>
             </li>
           </ul>
-
-          <div class="auth d-flex gap-3">
-            <a href="pages/auth/login.html">
-              <button class="second-btn fw-semibold login-btn">Login</button>
-            </a>
-            <a href="pages/auth/sign-up.html">
-              <button class="btn-main signup-btn">Signup</button>
-            </a>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle w-100"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user"></i> User Profile
+            </button>
+            <ul
+              class="dropdown-menu w-100 mt-4"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <li>
+                <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Wallet</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Notifications</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Saved Properties</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">User Profile</a></li>
+            </ul>
           </div>
           <button id="lang-toggle" class="lang-btn">EN</button>
         </div>
@@ -94,14 +112,14 @@
                 <a href="#" tabindex="0">
                   <img
                     class="img-fluid"
-                    src="assets/images/app-store.png"
+                    src="../../assets/images/app-store.png"
                     alt="App Store"
                   />
                 </a>
                 <a href="#" tabindex="0">
                   <img
                     class="img-fluid"
-                    src="assets/images/play-store.png"
+                    src="../../assets/images/play-store.png"
                     alt="Play Store"
                   />
                 </a>
@@ -111,7 +129,7 @@
           <div class="col-md-6">
             <img
               class="w-100"
-              src="assets/images/6dkxn8vcsnlpmflfrz.svg"
+              src="../../assets/images/6dkxn8vcsnlpmflfrz.svg"
               alt="Man Pointing"
             />
           </div>
@@ -133,7 +151,7 @@
                 <div class="img-container">
                   <img
                     class="w-100 rounded-3"
-                    src="assets/images/property-1.png"
+                    src="../../assets/images/property-1.png"
                     alt="property"
                   />
                 </div>
@@ -171,7 +189,7 @@
                 <div class="img-container">
                   <img
                     class="w-100 rounded-3"
-                    src="assets/images/property-2.png"
+                    src="../../assets/images/property-2.png"
                     alt="property"
                   />
                 </div>
@@ -209,7 +227,7 @@
                 <div class="img-container">
                   <img
                     class="w-100 rounded-3"
-                    src="assets/images/propert-3.png"
+                    src="../../assets/images/propert-3.png"
                     alt="property"
                   />
                 </div>
@@ -249,7 +267,11 @@
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-6 text-center mb-4 mb-md-0">
-            <img src="assets/images/Frame.svg" alt="image" class="img-fluid" />
+            <img
+              src="../../assets/images/Frame.svg"
+              alt="image"
+              class="img-fluid"
+            />
           </div>
           <div class="col-md-6">
             <div class="text-center text-md-start">
@@ -342,7 +364,7 @@
           </div>
           <div class="col-md-6 text-center mb-4 mb-md-0">
             <img
-              src="./assets/images/Frame2.svg"
+              src="../../assets/images/Frame2.svg"
               class="img-fluid"
               alt="image"
             />
@@ -490,7 +512,7 @@
           <!-- First Column -->
           <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
             <img
-              src="./assets/images/logo-white.svg"
+              src="../../assets/images/logo-white.svg"
               alt="Logo"
               style="width: 100px; height: auto"
             />
@@ -583,9 +605,9 @@
         </div>
       </div>
     </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js.map"></script>
-    <script src="js/all.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js.map"></script>
+    <script src="../../Js/all.min.js"></script>
+    <script src="../../js/script.js"></script>
   </body>
 </html>

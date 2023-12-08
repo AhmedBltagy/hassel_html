@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Haseel Login</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="overflow-hidden">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 bg-white">
+          <div class="p-4">
+            <div class="d-flex flex-column justify-content-center h-100 p-md-5">
+              <a class="navbar-brand mb-5" href="#">
+                <img
+                  src="../../assets/images/logo.svg"
+                  alt="Logo"
+                  class="w-50"
+                />
+              </a>
+              <h3 class="fw-bold mb-5 login-title">
+                <i class="fa-solid fa-arrow-left me-3"></i>login
+              </h3>
+              <ul
+                class="nav nav-tabs d-flex flex-nowrap mb-5 align-self-center"
+              >
+                <li>
+                  <a
+                    class="active text-decoration-none px-4 py-2 px-md-5 py-md-3 btn-main"
+                    id="id-number-tab"
+                    data-toggle="tab"
+                    href="#id-number"
+                    role="tab"
+                    aria-controls="id-number"
+                    aria-selected="true"
+                    onclick="switchInput('id')"
+                    >ID Number</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none px-4 py-2 px-md-5 py-md-3"
+                    id="username-tab"
+                    data-toggle="tab"
+                    href="#username"
+                    role="tab"
+                    aria-controls="username"
+                    aria-selected="false"
+                    onclick="switchInput('username')"
+                    >Username</a
+                  >
+                </li>
+              </ul>
+              <div id="id-number-field" class="input-field mb-3">
+                <label for="idNumber" class="form-label">ID Number</label>
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  id="idNumber"
+                  placeholder="Enter ID Number"
+                />
+              </div>
+              <div
+                id="username-field"
+                class="input-field mb-3"
+                style="display: none"
+              >
+                <label for="username" class="form-label">Username</label>
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  id="username"
+                  placeholder="Enter Username"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control p-2"
+                  id="password"
+                  placeholder="Enter Password"
+                />
+              </div>
+              <a
+                class="align-self-end mb-4 text-decoration-none login-txt"
+                href="forgot-pw.html"
+                >Forgot password?</a
+              >
+
+              <a href="../user/home.html" class="w-100 d-block">
+                <button class="btn-main mb-3 w-100" type="submit">Login</button>
+              </a>
+
+              <p class="align-self-center login-txt">
+                Don't have an account?
+                <a href="" class="text-decoration-none">Sign up</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 d-none d-md-block p-0">
+          <div
+            class="w-100 h-100 light-bg d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              src="/assets/images/login.png"
+              class="w-50"
+              alt="Decorative Image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js.map"></script>
+    <script src="../../Js/all.min.js"></script>
+    <script src="../../js/script.js"></script>
+  </body>
+</html>

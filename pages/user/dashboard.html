@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Haseel Invest</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../../assets/images/logo.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item ms-lg-4">
+              <a class="nav-link" href="pages/explore.html">Explore</a>
+            </li>
+            <li class="nav-item ms-lg-4">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item ms-lg-4">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item ms-lg-4">
+              <a class="nav-link" href="#">FAQs</a>
+            </li>
+          </ul>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle w-100"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user"></i> User Profile
+            </button>
+            <ul
+              class="dropdown-menu w-100 mt-4"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <li><a class="dropdown-item" href="#">Dashboard</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Wallet</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Notifications</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Saved Properties</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">User Profile</a></li>
+            </ul>
+          </div>
+          <button id="lang-toggle" class="lang-btn">EN</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- End Navbar -->
+    <div class="dashboard">
+      <div class="container">
+        <div class="user-dashboard-heading text-center mt-5">
+          <h1 class="fs-2">Dashboard</h1>
+          <div
+            class="breadcrumb d-inline-flex justify-content-center bg-light p-2 px-5 rounded"
+          >
+            <span class="text-muted mx-2">
+              <a
+                href="../../index.html"
+                class="text-decoration-none text-reset"
+              >
+                <i class="fa-solid fa-house"></i> Home
+              </a>
+              <i class="fa-solid fa-chevron-right me-1"></i>
+              <a href="#" class="text-decoration-none text-reset">
+                <i class="fa-regular fa-calendar-days"></i> User Data
+              </a>
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+            <span class="mx-2 current">
+              <i class="fa-solid fa-gauge"></i> Dashboard
+            </span>
+          </div>
+        </div>
+        <div class="user-data mb-5">
+          <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 sidebar p-3">
+              <h3>User Data</h3>
+              <hr />
+              <div
+                class="nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <a
+                  class="nav-link active"
+                  id="v-pills-dashboard-tab"
+                  data-bs-toggle="pill"
+                  href="#v-pills-dashboard"
+                  role="tab"
+                  aria-controls="v-pills-dashboard"
+                  aria-selected="true"
+                  ><i class="fa-solid fa-gauge"></i> Dashboard</a
+                >
+                <hr />
+                <a
+                  class="nav-link"
+                  id="v-pills-profile-tab"
+                  data-bs-toggle="pill"
+                  href="#v-pills-profile"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                  ><i class="fa-solid fa-money-bill-trend-up"></i>
+                  Investments</a
+                >
+                <hr />
+                <a
+                  class="nav-link"
+                  id="v-pills-notifications-tab"
+                  data-bs-toggle="pill"
+                  href="#v-pills-notifications"
+                  role="tab"
+                  aria-controls="v-pills-notifications"
+                  aria-selected="false"
+                  ><i class="fas fa-bell"></i> Notifications</a
+                >
+                <hr />
+                <a
+                  class="nav-link"
+                  id="v-pills-messages-tab"
+                  data-bs-toggle="pill"
+                  href="#v-pills-messages"
+                  role="tab"
+                  aria-controls="v-pills-messages"
+                  aria-selected="false"
+                  ><i class="fa-solid fa-wallet"></i> Wallet</a
+                >
+                <hr />
+                <a
+                  class="nav-link"
+                  id="v-pills-settings-tab"
+                  data-bs-toggle="pill"
+                  href="#v-pills-settings"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                  ><i class="fa-regular fa-bookmark"></i> Saved Properties</a
+                >
+                <hr />
+                <a
+                  class="nav-link"
+                  id="v-pills-reports-tab"
+                  data-bs-toggle="pill"
+                  href="#v-pills-reports"
+                  role="tab"
+                  aria-controls="v-pills-reports"
+                  aria-selected="false"
+                  ><i class="fa-solid fa-square-poll-horizontal"></i> Property
+                  Votes</a
+                >
+                <hr />
+                <a
+                  class="nav-link"
+                  id="v-pills-logout-tab"
+                  data-bs-toggle="pill"
+                  href="#v-pills-logout"
+                  role="tab"
+                  aria-controls="v-pills-logout"
+                  aria-selected="false"
+                  ><i class="fa-regular fa-user"></i>User Profile</a
+                >
+              </div>
+            </div>
+
+            <!-- Tabs Content -->
+            <div class="col-md-9 content">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="v-pills-dashboard"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-dashboard-tab"
+                >
+                  <div class="row my-4 dashboard-content">
+                    <!-- First Card -->
+                    <div class="col-lg-6">
+                      <div class="card">
+                        <div class="card-body d-flex gap-5 align-items-center">
+                          <div>
+                            <i class="fa-solid fa-money-bills fs-1"></i>
+                            <!-- FontAwesome icon -->
+                          </div>
+
+                          <div>
+                            <h5>0.00 SAR</h5>
+                            <span>Portfolio</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Second Card -->
+                    <div class="col-lg-6">
+                      <div class="card">
+                        <div class="card-body d-flex gap-5 align-items-center">
+                          <div>
+                            <i class="fas fa-building fs-1"></i>
+                            <!-- FontAwesome icon -->
+                          </div>
+                          <div>
+                            <h5>0%</h5>
+                            <span>Performance</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab"
+                >
+                  <div class="investment-content p-4">
+                    <div class="curernt my-4">
+                      <h4>current</h4>
+                      <table class="current-table">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID Number</th>
+                            <th scope="col">Property</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Reference Code</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>ID Number</td>
+                            <td>Property</td>
+                            <td>Amount</td>
+                            <td>Reference Code</td>
+                          </tr>
+                          <tr>
+                            <td>ID Number</td>
+                            <td>Property</td>
+                            <td>Amount</td>
+                            <td>Reference Code</td>
+                          </tr>
+                          <tr>
+                            <td>ID Number</td>
+                            <td>Property</td>
+                            <td>Amount</td>
+                            <td>Reference Code</td>
+                          </tr>
+                          <tr>
+                            <td>ID Number</td>
+                            <td>Property</td>
+                            <td>Amount</td>
+                            <td>Reference Code</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="pending my-4">
+                      <h4>pending</h4>
+                      <table class="pending-table">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID Number</th>
+                            <th scope="col">Property</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Reference Code</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>ID Number</td>
+                            <td>Property</td>
+                            <td>Amount</td>
+                            <td>Reference Code</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="past my-4">
+                      <h4>Past</h4>
+                      <table class="past-table">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID Number</th>
+                            <th scope="col">Property</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Reference Code</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>ID Number</td>
+                            <td>Property</td>
+                            <td>Amount</td>
+                            <td>Reference Code</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="past my-4">
+                      <h4>Past</h4>
+                      <table class="past-table">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID Number</th>
+                            <th scope="col">Property</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Reference Code</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>001</td>
+                            <td>Property</td>
+                            <td>Amount</td>
+                            <td>Reference Code</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="declined my-4">
+                      <h4>Declined</h4>
+                      <table class="declined-table">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID Number</th>
+                            <th scope="col">Property</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Reference Code</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>ID Number</td>
+                            <td>Property</td>
+                            <td>Amount</td>
+                            <td>Reference Code</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-messages"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-messages-tab"
+                >
+                  content here
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-settings"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-settings-tab"
+                >
+                  content here
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-reports"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-reports-tab"
+                >
+                  content here
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-notifications"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-notifications-tab"
+                >
+                  content here
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-logout"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-logout-tab"
+                >
+                  content here
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-data-footer text-center container-fluid py-5">
+        <h2>There are investment opportunities all around you.</h2>
+        <button class="btn-main my-3">Start Investing</button>
+      </div>
+    </div>
+
+    <footer class="text-lg-start px-5 py-4">
+      <div class="container">
+        <div class="row">
+          <!-- First Column -->
+          <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
+            <img
+              src="../../assets/images/logo-white.svg"
+              alt="Logo"
+              style="width: 100px; height: auto"
+            />
+
+            <p class="py-4">
+              Copyright &copy; 2020 Haseel Invest<br />
+              All rights reserved
+            </p>
+            <!-- Social Networks -->
+            <div class="social flex jsutify-content-start">
+              <a href="#" class="text-decoration-none">
+                <i class="fa-brands fa-instagram me-2"></i>
+              </a>
+
+              <a href="#" class="text-decoration-none">
+                <i class="fa-brands fa-dribbble mx-2"></i>
+              </a>
+
+              <a href="#" class="text-decoration-none">
+                <i class="fa-brands fa-twitter mx-2"></i>
+              </a>
+
+              <a href="#" class="text-decoration-none">
+                <i class="fa-brands fa-youtube mx-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Second Column -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-capitalize text-white mb-3 fw-semibold">company</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-decoration-none">About us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none">Blog</a>
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none">Contact us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none">Pricing</a>
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none">Testimonials</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Third Column -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-capitalize text-white mb-3 fw-semibold">support</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-decoration-none">Help center</a>
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none">Terms of service </a>
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none">Legal </a>
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none">Privacy policy </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Fourth Column -->
+          <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-capitalize text-white mb-3 fw-semibold">
+              Stay up to date
+            </h5>
+            <div
+              class="form-outline sub-form form-white mb-4 position-relative"
+            >
+              <input
+                type="email"
+                id="subscribe-form"
+                class="form-control rounded border-0 shadow-none"
+                placeholder="Your email address"
+              />
+              <!-- Send Icon -->
+              <a href="#!" class="btn mb-4 position-absolute top-0 end-0">
+                <i class="fa-regular fa-paper-plane text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js.map"></script>
+    <script src="../../Js/all.min.js"></script>
+    <script src="../../js/script.js"></script>
+  </body>
+</html>
