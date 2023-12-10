@@ -45,6 +45,9 @@ body::before {
 .fit-content {
   width: fit-content;
 }
+.main-color {
+  color: var(--main-color);
+}
 
 /* login and signup */
 
@@ -355,7 +358,36 @@ a,
 .investment-content thead th:last-child {
   border-radius: 0px 8px 0px 0px;
 }
+.notification-icon {
+  color: #ebcfb9;
+}
+.wallet-notempty .nav-link {
+  border-radius: 5px;
+  background-color: var(--light-color);
+}
+.wallet-notempty .nav-link.active {
+  background-color: var(--main-color);
+  color: white;
+}
+.transaction-value,
+.transaction-icon {
+  color: #a22b25;
+}
 
+/* Modal */
+.modal-header {
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
+.modal-close-icon {
+  border-radius: 50px;
+  border-color: var(--main-color) !important;
+}
+.modal-hint {
+  background-color: #ebcfb9;
+}
 table th,
 table td {
   border: 1px solid rgba(31, 66, 128, 0.16);

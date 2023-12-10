@@ -107,7 +107,7 @@
               </a>
               <i class="fa-solid fa-chevron-right"></i>
             </span>
-            <span class="mx-2 current">
+            <span id="breadcrumb-active-tab" class="mx-2 current">
               <i class="fa-solid fa-gauge"></i> Dashboard
             </span>
           </div>
@@ -137,11 +137,11 @@
                 <hr />
                 <a
                   class="nav-link"
-                  id="v-pills-profile-tab"
+                  id="v-pills-investments-tab"
                   data-bs-toggle="pill"
-                  href="#v-pills-profile"
+                  href="#v-pills-investments"
                   role="tab"
-                  aria-controls="v-pills-profile"
+                  aria-controls="v-pills-investments"
                   aria-selected="false"
                   ><i class="fa-solid fa-money-bill-trend-up"></i>
                   Investments</a
@@ -160,18 +160,18 @@
                 <hr />
                 <a
                   class="nav-link"
-                  id="v-pills-messages-tab"
+                  id="v-pills-wallet-tab"
                   data-bs-toggle="pill"
-                  href="#v-pills-messages"
+                  href="#v-pills-wallet"
                   role="tab"
-                  aria-controls="v-pills-messages"
+                  aria-controls="v-pills-wallet"
                   aria-selected="false"
                   ><i class="fa-solid fa-wallet"></i> Wallet</a
                 >
                 <hr />
                 <a
                   class="nav-link"
-                  id="v-pills-settings-tab"
+                  id="v-pills-saved--tab"
                   data-bs-toggle="pill"
                   href="#v-pills-settings"
                   role="tab"
@@ -251,9 +251,9 @@
                 </div>
                 <div
                   class="tab-pane fade"
-                  id="v-pills-profile"
+                  id="v-pills-investments"
                   role="tabpanel"
-                  aria-labelledby="v-pills-profile-tab"
+                  aria-labelledby="v-pills-investments"
                 >
                   <div class="investment-content p-4">
                     <div class="curernt my-4">
@@ -385,36 +385,531 @@
                 </div>
                 <div
                   class="tab-pane fade"
-                  id="v-pills-messages"
+                  id="v-pills-notifications"
                   role="tabpanel"
-                  aria-labelledby="v-pills-messages-tab"
+                  aria-labelledby="v-pills-notifications-tab"
                 >
-                  content here
+                  <div class="notifications-content py-3">
+                    <div
+                      class="notification-heading d-flex p-2 justify-content-between"
+                    >
+                      <h5>All Notifications</h5>
+                      <button class="border-0 rounded px-2 main-color">
+                        <i class="fa-solid fa-check-double"></i> Mark all as
+                        read
+                      </button>
+                    </div>
+                    <div
+                      class="d-flex notification align-items-center p-4 my-3 rounded shadow"
+                    >
+                      <i class="fas fa-bell notification-icon me-3 fs-1"></i>
+
+                      <div>
+                        <strong class="main-color">Approve Investment</strong>
+                        <div class="text-muted">
+                          Your investment request was approved
+                        </div>
+                      </div>
+                      <span class="notification-time ms-auto text-muted"
+                        >2023-05-22 17:47</span
+                      >
+                    </div>
+                    <div
+                      class="d-flex notification align-items-center p-4 my-3 rounded shadow"
+                    >
+                      <i class="fas fa-bell notification-icon me-3 fs-1"></i>
+
+                      <div>
+                        <strong class="main-color">Approve Investment</strong>
+                        <div class="text-muted">
+                          Your investment request was approved
+                        </div>
+                      </div>
+                      <span class="notification-time ms-auto text-muted"
+                        >2023-05-22 17:47</span
+                      >
+                    </div>
+                    <div
+                      class="d-flex notification align-items-center p-4 my-3 rounded shadow"
+                    >
+                      <i class="fas fa-bell notification-icon me-3 fs-1"></i>
+
+                      <div>
+                        <strong class="main-color">Approve Investment</strong>
+                        <div class="text-muted">
+                          Your investment request was approved
+                        </div>
+                      </div>
+                      <span class="notification-time ms-auto text-muted"
+                        >2023-05-22 17:47</span
+                      >
+                    </div>
+                    <div
+                      class="d-flex notification align-items-center p-4 my-3 rounded shadow"
+                    >
+                      <i class="fas fa-bell notification-icon me-3 fs-1"></i>
+
+                      <div>
+                        <strong class="main-color">Approve Investment</strong>
+                        <div class="text-muted">
+                          Your investment request was approved
+                        </div>
+                      </div>
+                      <span class="notification-time ms-auto text-muted"
+                        >2023-05-22 17:47</span
+                      >
+                    </div>
+                    <div
+                      class="d-flex notification align-items-center p-4 my-3 rounded shadow"
+                    >
+                      <i class="fas fa-bell notification-icon me-3 fs-1"></i>
+
+                      <div>
+                        <strong class="main-color">Approve Investment</strong>
+                        <div class="text-muted">
+                          Your investment request was approved
+                        </div>
+                      </div>
+                      <span class="notification-time ms-auto text-muted"
+                        >2023-05-22 17:47</span
+                      >
+                    </div>
+                  </div>
                 </div>
+
+                <div
+                  class="tab-pane fade show"
+                  id="v-pills-wallet"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-wallet-tab"
+                >
+                  <div class="row my-4 wallet-content align-items-center">
+                    <!-- First Card -->
+                    <div class="col-lg-8">
+                      <div class="card">
+                        <div class="card-body d-flex gap-5 align-items-center">
+                          <div>
+                            <i class="fa-solid fa-money-bills fs-1"></i>
+                            <!-- FontAwesome icon -->
+                          </div>
+
+                          <div>
+                            <h5>0.00 SAR</h5>
+                            <span>Portfolio</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="wallet-btns d-flex flex-column gap-2">
+                        <button
+                          class="btn-main"
+                          data-bs-toggle="modal"
+                          data-bs-target="#addBalanceModal"
+                        >
+                          Add balance
+                        </button>
+
+                        <!-- Add Balance Modal -->
+                        <div
+                          class="modal fade"
+                          id="addBalanceModal"
+                          tabindex="-1"
+                          aria-labelledby="modalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5
+                                  class="modal-title main-color"
+                                  id="modalLabel"
+                                >
+                                  Add Balance
+                                </h5>
+
+                                <button
+                                  type="button"
+                                  class="bg-white main-color modal-close-icon"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                >
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="mb-3">
+                                    <label for="amount" class="col-form-label"
+                                      >Amount:</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="amount"
+                                      placeholder="Amount to be added"
+                                    />
+                                  </div>
+                                  <p class="modal-hint p-2 rounded">
+                                    By submitting the request, the process takes
+                                    some time to process. You will receive a
+                                    notification after the process is completed.
+                                  </p>
+                                </form>
+                              </div>
+                              <div
+                                class="modal-footer d-flex justify-content-center"
+                              >
+                                <button
+                                  type="button"
+                                  class="second-btn"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Cancel
+                                </button>
+                                <button
+                                  onclick="submitAddModal()"
+                                  type="button"
+                                  class="btn-main"
+                                >
+                                  Submit
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button
+                          class="second-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#withdrawalModal"
+                        >
+                          Balance Withdrawal
+                        </button>
+                        <div
+                          class="modal fade"
+                          id="withdrawalModal"
+                          tabindex="-1"
+                          aria-labelledby="modalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5
+                                  class="modal-title main-color"
+                                  id="modalLabel"
+                                >
+                                  Add Balance
+                                </h5>
+
+                                <button
+                                  type="button"
+                                  class="bg-white main-color modal-close-icon"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                >
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="mb-3">
+                                    <label for="amount" class="col-form-label"
+                                      >Amount:</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="amount"
+                                      placeholder="Amount to be added"
+                                    />
+                                  </div>
+                                  <p class="modal-hint p-2 rounded">
+                                    By submitting the request, the process takes
+                                    some time to process. You will receive a
+                                    notification after the process is completed.
+                                  </p>
+                                </form>
+                              </div>
+                              <div
+                                class="modal-footer d-flex justify-content-center"
+                              >
+                                <button
+                                  type="button"
+                                  class="second-btn"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Cancel
+                                </button>
+                                <button
+                                  onclick="submitWithdrawal()"
+                                  type="button"
+                                  class="btn-main"
+                                >
+                                  Submit
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wallet-result">
+                      <h5 class="my-5">Transactions History</h5>
+                      <div class="wallet-empty d-none">
+                        <p
+                          class="text-muted d-flex align-items-end justify-content-center"
+                        >
+                          No transactions available in your wallet
+                        </p>
+                      </div>
+
+                      <div class="wallet-notempty">
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item">
+                            <a
+                              class="nav-link active"
+                              data-bs-toggle="tab"
+                              href="#all"
+                              >All</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              class="nav-link"
+                              data-bs-toggle="tab"
+                              href="#deposit"
+                              >Deposit</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              class="nav-link"
+                              data-bs-toggle="tab"
+                              href="#withdrawal"
+                              >Withdrawal</a
+                            >
+                          </li>
+                        </ul>
+
+                        <!-- Tab content -->
+                        <div class="tab-content">
+                          <div id="all" class="tab-pane active">
+                            <br />
+                            <div
+                              class="d-flex transaction align-items-center p-4 my-3 rounded shadow"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-up-from-bracket transaction-icon me-3 fs-1"
+                              ></i>
+
+                              <div>
+                                <strong class="main-color"
+                                  >Approve Investment</strong
+                                >
+                                <div class="text-muted">
+                                  Investment Withdraw
+                                  <p class="transaction-value">-2000.00</p>
+                                </div>
+                              </div>
+                              <span class="transaction-time ms-auto text-muted"
+                                >2023-05-22 17:47</span
+                              >
+                            </div>
+                            <div
+                              class="d-flex transaction align-items-center p-4 my-3 rounded shadow"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-up-from-bracket transaction-icon me-3 fs-1"
+                              ></i>
+
+                              <div>
+                                <strong class="main-color"
+                                  >Approve Investment</strong
+                                >
+                                <div class="text-muted">
+                                  Investment Withdraw
+                                  <p class="transaction-value">-2000.00</p>
+                                </div>
+                              </div>
+                              <span class="transaction-time ms-auto text-muted"
+                                >2023-05-22 17:47</span
+                              >
+                            </div>
+                            <div
+                              class="d-flex transaction align-items-center p-4 my-3 rounded shadow"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-up-from-bracket transaction-icon me-3 fs-1"
+                              ></i>
+
+                              <div>
+                                <strong class="main-color"
+                                  >Approve Investment</strong
+                                >
+                                <div class="text-muted">
+                                  Investment Withdraw
+                                  <p class="transaction-value">-2000.00</p>
+                                </div>
+                              </div>
+                              <span class="transaction-time ms-auto text-muted"
+                                >2023-05-22 17:47</span
+                              >
+                            </div>
+                            <div
+                              class="d-flex transaction align-items-center p-4 my-3 rounded shadow"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-up-from-bracket transaction-icon me-3 fs-1"
+                              ></i>
+
+                              <div>
+                                <strong class="main-color"
+                                  >Approve Investment</strong
+                                >
+                                <div class="text-muted">
+                                  Investment Withdraw
+                                  <p class="transaction-value">-2000.00</p>
+                                </div>
+                              </div>
+                              <span class="transaction-time ms-auto text-muted"
+                                >2023-05-22 17:47</span
+                              >
+                            </div>
+                          </div>
+
+                          <div id="deposit" class="tab-pane fade">
+                            <br />
+                            <div
+                              class="d-flex transaction align-items-center p-4 my-3 rounded shadow"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-up-from-bracket transaction-icon me-3 fs-1"
+                              ></i>
+
+                              <div>
+                                <strong class="main-color"
+                                  >Approve Investment</strong
+                                >
+                                <div class="text-muted">
+                                  Investment Withdraw
+                                  <p class="transaction-value">-2000.00</p>
+                                </div>
+                              </div>
+                              <span class="transaction-time ms-auto text-muted"
+                                >2023-05-22 17:47</span
+                              >
+                            </div>
+                            <div
+                              class="d-flex transaction align-items-center p-4 my-3 rounded shadow"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-up-from-bracket transaction-icon me-3 fs-1"
+                              ></i>
+
+                              <div>
+                                <strong class="main-color"
+                                  >Approve Investment</strong
+                                >
+                                <div class="text-muted">
+                                  Investment Withdraw
+                                  <p class="transaction-value">-2000.00</p>
+                                </div>
+                              </div>
+                              <span class="transaction-time ms-auto text-muted"
+                                >2023-05-22 17:47</span
+                              >
+                            </div>
+                            <div
+                              class="d-flex transaction align-items-center p-4 my-3 rounded shadow"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-up-from-bracket transaction-icon me-3 fs-1"
+                              ></i>
+
+                              <div>
+                                <strong class="main-color"
+                                  >Approve Investment</strong
+                                >
+                                <div class="text-muted">
+                                  Investment Withdraw
+                                  <p class="transaction-value">-2000.00</p>
+                                </div>
+                              </div>
+                              <span class="transaction-time ms-auto text-muted"
+                                >2023-05-22 17:47</span
+                              >
+                            </div>
+                          </div>
+                          <div id="withdrawal" class="tab-pane fade">
+                            <br />
+                            <div
+                              class="d-flex transaction align-items-center p-4 my-3 rounded shadow"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-up-from-bracket transaction-icon me-3 fs-1"
+                              ></i>
+
+                              <div>
+                                <strong class="main-color"
+                                  >Approve Investment</strong
+                                >
+                                <div class="text-muted">
+                                  Investment Withdraw
+                                  <p class="transaction-value">-2000.00</p>
+                                </div>
+                              </div>
+                              <span class="transaction-time ms-auto text-muted"
+                                >2023-05-22 17:47</span
+                              >
+                            </div>
+                            <div
+                              class="d-flex transaction align-items-center p-4 my-3 rounded shadow"
+                            >
+                              <i
+                                class="fa-solid fa-arrow-up-from-bracket transaction-icon me-3 fs-1"
+                              ></i>
+
+                              <div>
+                                <strong class="main-color"
+                                  >Approve Investment</strong
+                                >
+                                <div class="text-muted">
+                                  Investment Withdraw
+                                  <p class="transaction-value">-2000.00</p>
+                                </div>
+                              </div>
+                              <span class="transaction-time ms-auto text-muted"
+                                >2023-05-22 17:47</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <div
                   class="tab-pane fade"
                   id="v-pills-settings"
                   role="tabpanel"
                   aria-labelledby="v-pills-settings-tab"
                 >
-                  content here
+                  f
                 </div>
+
                 <div
                   class="tab-pane fade"
                   id="v-pills-reports"
                   role="tabpanel"
                   aria-labelledby="v-pills-reports-tab"
                 >
-                  content here
+                  content dhere
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-notifications"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-notifications-tab"
-                >
-                  content here
-                </div>
+
                 <div
                   class="tab-pane fade"
                   id="v-pills-logout"
