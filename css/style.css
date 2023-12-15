@@ -8,10 +8,17 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+.text-color {
+  color: #343434;
+}
+.blue-color {
+  color: #4361ee;
+}
 body.rtl {
   direction: rtl;
   font-family: "Cairo", sans-serif;
 }
+
 /* Circle Shape In The Background */
 body::before {
   content: "";
@@ -24,7 +31,10 @@ body::before {
   background: var(--light-color);
   z-index: -1;
 }
-/* Main Blue Button */
+a:hover {
+  color: inherit;
+}
+/* Main Button */
 .btn-main {
   border-radius: 8px;
   background: var(--main-color);
@@ -32,6 +42,7 @@ body::before {
   padding: 0.7em 1.3em;
   border: none;
 }
+
 .second-btn {
   background: #fff;
   border-radius: 8px;
@@ -39,18 +50,52 @@ body::before {
   color: var(--main-color);
   padding: 0.7em 1.3em;
 }
+
 .light-bg {
   background-color: var(--light-color);
 }
+
 .fit-content {
   width: fit-content;
 }
 .main-color {
   color: var(--main-color);
 }
+/* Accordion FaQs */
+.accordion-head h2 {
+  color: var(--grey-color);
+}
+.accordion-head p {
+  color: var(--muted-grey-color);
+}
+.accordion-item:has(.show) {
+  border: 2px solid var(--main-color);
+  box-shadow: 0px 6px 16px 0px rgba(31, 66, 128, 0.16);
+  border-radius: 14px !important;
+}
+.accordion-item {
+  border: none;
+  margin-bottom: 1em;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+.accordion-button.collapsed {
+  border-radius: 18px !important;
+  background: white;
+  box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+  padding-block: 3em;
+}
+
+.accordion-button:not(.collapsed)::after {
+  z-index: 0;
+  border-color: transparent transparent transparent white;
+  color: white;
+}
 
 /* login and signup */
-
 .nav-tabs {
   border-bottom: none !important;
 }
@@ -74,35 +119,36 @@ body::before {
 }
 
 /* pb */
-.progress-container {
+
+.signup-progress-container {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.progress {
+.signup-progress-container .progress {
   height: 5px;
   background-color: #e0e0e0;
   border-radius: 10px;
   overflow: hidden;
 }
 
-.progress-bar {
+.signup-progress-container .progress-bar {
   border-radius: 10px;
 }
 
-.step-labels {
+.signup-progress-container .step-labels {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-.step {
+.signup-progress-container .step {
   position: relative;
   font-size: 0.9em;
 }
 
-.step-labels span:first-child::after,
-.step-labels span:last-child::after {
+.signup-progress-container .step-labels span:first-child::after,
+.signup-progress-container .step-labels span:last-child::after {
   content: "";
   position: absolute;
   left: 0;
@@ -112,30 +158,33 @@ body::before {
   background-color: #e0e0e0;
   border-radius: 50%;
 }
-.step-labels span:first-child::after {
+.signup-progress-container .step-labels span:first-child::after {
   border: 6px solid #1f4280;
 }
 
-.step-labels span:last-child::after {
+.signup-progress-container .step-labels span:last-child::after {
   left: auto;
   right: 0;
 }
 
-.active-step::after {
+.signup-progress-container .active-step::after {
   background-color: var(--main-color, #1f4280);
 }
-/* Navbar */
+
+/* Start Navbar */
 nav a.nav-link {
   color: #18191f;
 }
 
 nav .nav-link:hover,
 nav .nav-link.active {
-  color: var(--main-color);
+  color: var(--main-color) !important;
 }
+/* Mobile toggler */
 .navbar-toggler:focus {
   box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) var(--main-color);
 }
+
 .lang-btn {
   border: none;
   background-color: white;
@@ -151,6 +200,8 @@ nav .nav-link.active {
   margin-inline-start: 1em;
   border: 1px solid var(--main-color);
 }
+/* End Navbar */
+
 /* Sections */
 .sec-title {
   color: var(--grey-color);
@@ -161,19 +212,16 @@ nav .nav-link.active {
   line-height: 24px;
 }
 
-/* property */
+/* Property Card */
 
 #sec-3 .property-card,
 .similars .property-card {
   margin-bottom: 8rem;
 }
-
-a,
 .prop-details,
 .property-num {
   color: var(--main-color);
 }
-
 .prop-details {
   background: linear-gradient(
       0deg,
@@ -182,14 +230,15 @@ a,
     ),
     #fff;
 }
-
+.property-card a {
+  color: var(--main-color);
+}
 #sec-3 span {
   border-color: var(--main-color) !important;
 }
-/* Section 5 */
-.navy-txt {
-  color: var(--main-color);
-}
+
+/* Section 5 Home */
+
 #sec-5 .stat-item svg {
   color: var(--main-color);
   font-size: 2em;
@@ -201,41 +250,7 @@ a,
   color: var(--muted-grey-color);
 }
 
-/* Accordion */
-#sec-8 .accordion-head h2 {
-  color: var(--grey-color);
-}
-#sec-8 .accordion-head p {
-  color: var(--muted-grey-color);
-}
-#sec-8 .accordion-item:has(.show) {
-  border: 2px solid var(--main-color);
-  box-shadow: 0px 6px 16px 0px rgba(31, 66, 128, 0.16);
-  border-radius: 14px !important;
-}
-#sec-8 .accordion-item {
-  border: none;
-  margin-bottom: 1em;
-}
-
-#sec-8 .accordion-button:not(.collapsed) {
-  background-color: transparent;
-  box-shadow: none;
-}
-#sec-8 .accordion-button.collapsed {
-  border-radius: 18px !important;
-  background: white;
-  box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
-  padding-block: 3em;
-}
-
-#sec-8 .accordion-button:not(.collapsed)::after {
-  z-index: 0;
-  border-color: transparent transparent transparent white;
-  color: white;
-}
-
-/* Explore page */
+/* Explore page and property details */
 .breadcrumb {
   border: 1px solid rgba(31, 66, 128, 0.24);
 }
@@ -250,9 +265,7 @@ a,
   background: var(--White, #fff);
   box-shadow: 4px 4px 24px 0px rgba(171, 190, 209, 0.24);
 }
-.form-heading {
-  color: var(--main-color);
-}
+
 .card {
   border: none;
   box-shadow: 4px 10px 30px 0px rgba(0, 0, 0, 0.06);
@@ -297,9 +310,7 @@ a,
   padding-right: 0;
   padding-left: 0;
 }
-#days {
-  color: var(--main-color);
-}
+
 /* User */
 #dropdownMenuButton,
 .dropdown-menu {
@@ -346,7 +357,6 @@ a,
 }
 .user-data table {
   width: 100%;
-
   border-collapse: separate;
   border-spacing: 0;
 }
@@ -365,9 +375,9 @@ a,
   border-radius: 5px;
   background-color: var(--light-color);
 }
-.wallet-notempty .nav-link.active {
-  background-color: var(--main-color);
-  color: white;
+.dashboard .nav-link.active {
+  background-color: var(--main-color) !important;
+  color: white !important;
 }
 .transaction-value,
 .transaction-icon {
@@ -388,6 +398,33 @@ a,
 .modal-hint {
   background-color: #ebcfb9;
 }
+
+/* date-progress */
+
+.date-progress #progressBar {
+  background-color: #ebcfb9;
+}
+#voteModal input[type="radio"] {
+  transform: scale(1.5);
+}
+/* Chart */
+#resVoteModal .progress {
+  height: 35px;
+}
+.bg-abstain .progress-bar {
+  background-color: #fbbf24;
+}
+.bg-yes .progress-bar {
+  background-color: #10b981;
+}
+.bg-no .progress-bar {
+  background-color: #ef4444;
+}
+#resVoteModal .progress-bar {
+  text-align: start !important;
+  padding: 10px;
+}
+/* Table */
 table th,
 table td {
   border: 1px solid rgba(31, 66, 128, 0.16);
@@ -400,18 +437,19 @@ table thead th {
 form label {
   color: #1e293b;
 }
-form input,
+form input:not([type="checkbox"]),
 form select {
   padding: 16px !important;
   border-radius: 8px !important;
-}
-form input::placeholder,
-select::placeholder {
 }
 input:focus,
 select:focus {
   border: 1px solid #cbd5e1 !important;
   box-shadow: none !important;
+}
+
+.invest-amount input[checkbox] {
+  padding: 5px !important;
 }
 /* Footer */
 footer {
@@ -422,6 +460,65 @@ footer a,
 footer a:hover {
   color: var(--light-color);
 }
+/* progressbar investment*/
+
+.progress-container {
+  width: 30%;
+  text-align: center;
+}
+
+.progress {
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.step-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.step {
+  position: relative;
+  font-size: 0.9em;
+}
+
+.step-labels span::after {
+  content: "";
+  position: absolute;
+  top: calc(-37px / 2 - 10px);
+  width: 25px;
+  height: 25px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.step-labels span:first-child::after {
+  left: 0;
+}
+
+.step-labels span:nth-child(2)::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.step-labels span:last-child::after {
+  right: 0;
+}
+
+/* Styling for the active step */
+.active-step::after {
+  border-color: var(--main-color, #1f4280) !important;
+}
+.previous-step::after {
+  background-color: var(--main-color, #1f4280) !important;
+}
+
+/* Styling for the step immediately before the active step */
 
 footer .social svg {
   background-color: #3c464c;

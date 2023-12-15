@@ -39,12 +39,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html"
+              <a class="nav-link active" aria-current="page" href="./home.html"
                 >Home</a
               >
             </li>
             <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="pages/explore.html">Explore</a>
+              <a class="nav-link" href="#">Explore</a>
             </li>
             <li class="nav-item ms-lg-4">
               <a class="nav-link" href="#">About Us</a>
@@ -70,7 +70,9 @@
               class="dropdown-menu w-100 mt-4"
               aria-labelledby="dropdownMenuButton"
             >
-              <li><a class="dropdown-item" href="#">Dashboard</a></li>
+              <li>
+                <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+              </li>
               <li><hr class="dropdown-divider" /></li>
               <li><a class="dropdown-item" href="#">Wallet</a></li>
               <li><hr class="dropdown-divider" /></li>
@@ -171,22 +173,22 @@
                 <hr />
                 <a
                   class="nav-link"
-                  id="v-pills-saved--tab"
+                  id="v-pills-saved-properties-tab"
                   data-bs-toggle="pill"
-                  href="#v-pills-settings"
+                  href="#v-pills-saved-properties"
                   role="tab"
-                  aria-controls="v-pills-settings"
+                  aria-controls="v-pills-saved-properties"
                   aria-selected="false"
                   ><i class="fa-regular fa-bookmark"></i> Saved Properties</a
                 >
                 <hr />
                 <a
                   class="nav-link"
-                  id="v-pills-reports-tab"
+                  id="v-pills-props-votes-tab"
                   data-bs-toggle="pill"
-                  href="#v-pills-reports"
+                  href="#v-pills-props-votes"
                   role="tab"
-                  aria-controls="v-pills-reports"
+                  aria-controls="v-pills-props-votes"
                   aria-selected="false"
                   ><i class="fa-solid fa-square-poll-horizontal"></i> Property
                   Votes</a
@@ -194,11 +196,11 @@
                 <hr />
                 <a
                   class="nav-link"
-                  id="v-pills-logout-tab"
+                  id="v-pills-profile-tab"
                   data-bs-toggle="pill"
-                  href="#v-pills-logout"
+                  href="#v-pills-profile"
                   role="tab"
-                  aria-controls="v-pills-logout"
+                  aria-controls="v-pills-profile"
                   aria-selected="false"
                   ><i class="fa-regular fa-user"></i>User Profile</a
                 >
@@ -658,6 +660,7 @@
                     </div>
                     <div class="wallet-result">
                       <h5 class="my-5">Transactions History</h5>
+
                       <div class="wallet-empty d-none">
                         <p
                           class="text-muted d-flex align-items-end justify-content-center"
@@ -894,29 +897,1401 @@
 
                 <div
                   class="tab-pane fade"
-                  id="v-pills-settings"
+                  id="v-pills-saved-properties"
                   role="tabpanel"
-                  aria-labelledby="v-pills-settings-tab"
+                  aria-labelledby="v-pills-saved-properties-tab"
                 >
-                  f
+                  <div class="saved-props-content my-4 py-4">
+                    <div class="row prop-row">
+                      <div class="col-lg-6 mb-4">
+                        <div class="property-card position-relative rounded-3">
+                          <!-- Property card content here -->
+                          <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                              <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/propert-3.png"
+                                alt="property"
+                              />
+                            </div>
+                            <div
+                              class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                            >
+                              <h6 class="fw-bold">Property Name</h6>
+                              <p class="property-num">ha-44</p>
+                              <p>City no 1- District no 2</p>
+                              <div class="prop-details rounded-3 p-1">
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bed fa-xs me-1"></i> 4
+                                  Beds</span
+                                >
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bath fa-xs me-1"></i>3
+                                  Bath</span
+                                >
+                                <span class="px-2"
+                                  ><i class="fa-solid fa-house fa-xs me-1"></i
+                                  >320 SQM</span
+                                >
+                              </div>
+                              <a
+                                class="fw-bold text-decoration-none my-3 d-block"
+                                href="#"
+                                >View more
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <div class="property-card position-relative rounded-3">
+                          <!-- Property card content here -->
+                          <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                              <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-2.png"
+                                alt="property"
+                              />
+                            </div>
+                            <div
+                              class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                            >
+                              <h6 class="fw-bold">Property Name</h6>
+                              <p class="property-num">ha-44</p>
+                              <p>City no 1- District no 2</p>
+                              <div class="prop-details rounded-3 p-1">
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bed fa-xs me-1"></i> 4
+                                  Beds</span
+                                >
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bath fa-xs me-1"></i>3
+                                  Bath</span
+                                >
+                                <span class="px-2"
+                                  ><i class="fa-solid fa-house fa-xs me-1"></i
+                                  >320 SQM</span
+                                >
+                              </div>
+                              <a
+                                class="fw-bold text-decoration-none my-3 d-block"
+                                href="#"
+                                >View more
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row prop-row">
+                      <div class="col-lg-6 mb-4">
+                        <div class="property-card position-relative rounded-3">
+                          <!-- Property card content here -->
+                          <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                              <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/propert-3.png"
+                                alt="property"
+                              />
+                            </div>
+                            <div
+                              class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                            >
+                              <h6 class="fw-bold">Property Name</h6>
+                              <p class="property-num">ha-44</p>
+                              <p>City no 1- District no 2</p>
+                              <div class="prop-details rounded-3 p-1">
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bed fa-xs me-1"></i> 4
+                                  Beds</span
+                                >
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bath fa-xs me-1"></i>3
+                                  Bath</span
+                                >
+                                <span class="px-2"
+                                  ><i class="fa-solid fa-house fa-xs me-1"></i
+                                  >320 SQM</span
+                                >
+                              </div>
+                              <a
+                                class="fw-bold text-decoration-none my-3 d-block"
+                                href="#"
+                                >View more
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <div class="property-card position-relative rounded-3">
+                          <!-- Property card content here -->
+                          <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                              <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-2.png"
+                                alt="property"
+                              />
+                            </div>
+                            <div
+                              class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                            >
+                              <h6 class="fw-bold">Property Name</h6>
+                              <p class="property-num">ha-44</p>
+                              <p>City no 1- District no 2</p>
+                              <div class="prop-details rounded-3 p-1">
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bed fa-xs me-1"></i> 4
+                                  Beds</span
+                                >
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bath fa-xs me-1"></i>3
+                                  Bath</span
+                                >
+                                <span class="px-2"
+                                  ><i class="fa-solid fa-house fa-xs me-1"></i
+                                  >320 SQM</span
+                                >
+                              </div>
+                              <a
+                                class="fw-bold text-decoration-none my-3 d-block"
+                                href="#"
+                                >View more
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row prop-row">
+                      <div class="col-lg-6 mb-4">
+                        <div class="property-card position-relative rounded-3">
+                          <!-- Property card content here -->
+                          <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                              <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/propert-3.png"
+                                alt="property"
+                              />
+                            </div>
+                            <div
+                              class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                            >
+                              <h6 class="fw-bold">Property Name</h6>
+                              <p class="property-num">ha-44</p>
+                              <p>City no 1- District no 2</p>
+                              <div class="prop-details rounded-3 p-1">
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bed fa-xs me-1"></i> 4
+                                  Beds</span
+                                >
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bath fa-xs me-1"></i>3
+                                  Bath</span
+                                >
+                                <span class="px-2"
+                                  ><i class="fa-solid fa-house fa-xs me-1"></i
+                                  >320 SQM</span
+                                >
+                              </div>
+                              <a
+                                class="fw-bold text-decoration-none my-3 d-block"
+                                href="#"
+                                >View more
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <div class="property-card position-relative rounded-3">
+                          <!-- Property card content here -->
+                          <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                              <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-2.png"
+                                alt="property"
+                              />
+                            </div>
+                            <div
+                              class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                            >
+                              <h6 class="fw-bold">Property Name</h6>
+                              <p class="property-num">ha-44</p>
+                              <p>City no 1- District no 2</p>
+                              <div class="prop-details rounded-3 p-1">
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bed fa-xs me-1"></i> 4
+                                  Beds</span
+                                >
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bath fa-xs me-1"></i>3
+                                  Bath</span
+                                >
+                                <span class="px-2"
+                                  ><i class="fa-solid fa-house fa-xs me-1"></i
+                                  >320 SQM</span
+                                >
+                              </div>
+                              <a
+                                class="fw-bold text-decoration-none my-3 d-block"
+                                href="#"
+                                >View more
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row prop-row">
+                      <div class="col-lg-6 mb-4">
+                        <div class="property-card position-relative rounded-3">
+                          <!-- Property card content here -->
+                          <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                              <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/propert-3.png"
+                                alt="property"
+                              />
+                            </div>
+                            <div
+                              class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                            >
+                              <h6 class="fw-bold">Property Name</h6>
+                              <p class="property-num">ha-44</p>
+                              <p>City no 1- District no 2</p>
+                              <div class="prop-details rounded-3 p-1">
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bed fa-xs me-1"></i> 4
+                                  Beds</span
+                                >
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bath fa-xs me-1"></i>3
+                                  Bath</span
+                                >
+                                <span class="px-2"
+                                  ><i class="fa-solid fa-house fa-xs me-1"></i
+                                  >320 SQM</span
+                                >
+                              </div>
+                              <a
+                                class="fw-bold text-decoration-none my-3 d-block"
+                                href="#"
+                                >View more
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <div class="property-card position-relative rounded-3">
+                          <!-- Property card content here -->
+                          <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                              <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-2.png"
+                                alt="property"
+                              />
+                            </div>
+                            <div
+                              class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                            >
+                              <h6 class="fw-bold">Property Name</h6>
+                              <p class="property-num">ha-44</p>
+                              <p>City no 1- District no 2</p>
+                              <div class="prop-details rounded-3 p-1">
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bed fa-xs me-1"></i> 4
+                                  Beds</span
+                                >
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bath fa-xs me-1"></i>3
+                                  Bath</span
+                                >
+                                <span class="px-2"
+                                  ><i class="fa-solid fa-house fa-xs me-1"></i
+                                  >320 SQM</span
+                                >
+                              </div>
+                              <a
+                                class="fw-bold text-decoration-none my-3 d-block"
+                                href="#"
+                                >View more
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div
                   class="tab-pane fade"
-                  id="v-pills-reports"
+                  id="v-pills-props-votes"
                   role="tabpanel"
-                  aria-labelledby="v-pills-reports-tab"
+                  aria-labelledby="v-pills-props-votes-tab"
                 >
-                  content dhere
-                </div>
+                  <div class="props-votes-content my-4 py-4">
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active"
+                          data-bs-toggle="tab"
+                          href="#current-votes"
+                          >Current Votes</a
+                        >
+                      </li>
 
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          data-bs-toggle="tab"
+                          href="#previous-votes"
+                          >Previous Votes</a
+                        >
+                      </li>
+                    </ul>
+
+                    <!-- Tab content -->
+                    <div class="tab-content">
+                      <div id="current-votes" class="tab-pane active">
+                        <br />
+
+                        <div class="row prop-row">
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/propert-3.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting.html"
+                                    >Vote Now
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/property-2.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting.html"
+                                    >Vote Now
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row prop-row">
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/propert-3.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting.html"
+                                    >Vote Now
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/property-2.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting.html"
+                                    >Vote Now
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row prop-row">
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/propert-3.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting.html"
+                                    >Vote Now
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/property-2.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting.html"
+                                    >Vote Now
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row prop-row">
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/propert-3.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting.html"
+                                    >Vote Now
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/property-2.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting.html"
+                                    >Vote Now
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="previous-votes" class="tab-pane fade">
+                        <br />
+
+                        <div class="row prop-row">
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/propert-3.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting-details.html"
+                                    >Voting Summary
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/property-2.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting-details.html"
+                                    >Voting Summary
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row prop-row">
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/propert-3.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting-details.html"
+                                    >Voting Summary
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/property-2.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting-details.html"
+                                    >Voting Summary
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row prop-row">
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/propert-3.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting-details.html"
+                                    >Voting Summary
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/property-2.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting-details.html"
+                                    >Voting Summary
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row prop-row">
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/propert-3.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting-details.html"
+                                    >Voting Summary
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <div class="img-container">
+                                  <img
+                                    class="w-100 rounded-3"
+                                    src="../../assets/images/property-2.png"
+                                    alt="property"
+                                  />
+                                </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting-details.html"
+                                    >Voting Summary
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div
                   class="tab-pane fade"
-                  id="v-pills-logout"
+                  id="v-pills-profile"
                   role="tabpanel"
-                  aria-labelledby="v-pills-logout-tab"
+                  aria-labelledby="v-pills-profile-tab"
                 >
-                  content here
+                  <div class="user-profile-content py-4">
+                    <div class="mb-3">
+                      <label for="username" class="form-label">Username</label>
+                      <input
+                        type="text"
+                        class="form-control p-2"
+                        id="username"
+                        placeholder="Username"
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="id-number" class="form-label"
+                        >National ID</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control p-2"
+                        id="national-id"
+                        placeholder="National ID"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label"
+                        >Email Address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control p-2"
+                        id="email"
+                        placeholder="user@email.com"
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <input
+                        type="tel"
+                        class="form-control p-2"
+                        id="phone"
+                        placeholder="+966 123 456 7890"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="nationality" class="form-label"
+                        >Nationality</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control p-2"
+                        id="nationality"
+                        placeholder="Saudi Arabia"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Account Type</label>
+                      <br />
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="accountType"
+                          id="retailSale"
+                        />
+                        <label class="form-check-label" for="retailSale">
+                          Retail Sale
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="accountType"
+                          id="competent"
+                        />
+                        <label class="form-check-label" for="competent">
+                          Competent
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="currentAccount" class="form-label"
+                        >Current Account</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control p-2"
+                        id="currentAccount"
+                        placeholder="Current account"
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="incomeDetails" class="form-label"
+                        >Income Details</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control p-2"
+                        id="incomeDetails"
+                        placeholder="Income details"
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="additionalWealthDetails" class="form-label"
+                        >Additional Wealth Details</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control p-2"
+                        id="additionalWealthDetails"
+                        placeholder="Additional wealth details"
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Risk Acceptance</label>
+                      <br />
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="riskAcceptance"
+                          id="riskYes"
+                        />
+                        <label class="form-check-label" for="riskYes">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="riskAcceptance"
+                          id="riskNo"
+                        />
+                        <label class="form-check-label" for="riskNo">
+                          No
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="addressArabic" class="form-label"
+                        >Address in Arabic</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control p-2"
+                        id="addressArabic"
+                        placeholder="Address in Arabic"
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="addressEnglish" class="form-label"
+                        >Address in English</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control p-2"
+                        id="addressEnglish"
+                        placeholder="Address in English"
+                      />
+                    </div>
+                    <a href="">
+                      <button class="btn-main mb-3 mt-4" type="submit">
+                        Update Details
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

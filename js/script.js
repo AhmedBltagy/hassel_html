@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   })
 })
 
-var progressBar = document.getElementById("progressBar")
+var progressBar = document.querySelector(" .days-progress #progressBar")
 function updateProgressBar() {
   var days = document.getElementById("days")
   var totalDays = 500 // Total number of days (can be adjusted as needed)
@@ -66,7 +66,7 @@ function switchInput(inputType) {
     idNumberTab.classList.add("light-bg")
   }
 }
-//  Modal
+//Wallet Add Modal
 
 function submitAddModal() {
   var modalBody = document.querySelector("#addBalanceModal .modal-body")
@@ -124,7 +124,7 @@ function submitAddModal() {
     // Update the modal body
     modalBody.innerHTML = `
         <div class="text-center">
-          <img src="/assets/images/payment-error.svg" class="img-fluid" alt="Payment Failed Image">
+          <img src="../../assets/images/payment-error.svg" class="img-fluid" alt="Payment Failed Image">
           <h5 class="mt-3 fw-bold">Payment Failed</h5>
           <p>It looks like your payment didn't go through, you can try the payment again!</p>
         </div>
@@ -150,7 +150,7 @@ function submitAddModal() {
       // Update the modal body
       modalBody.innerHTML = `
         <div class="text-center">
-          <img src="/assets/images/congrats.svg" class="img-fluid" alt="Payment Failed Image">
+          <img src="../../assets/images/congrats.svg" class="img-fluid" alt="Payment Failed Image">
           <h5 class="mt-3 fw-bold">Congratulations</h5>
           <p>Your payment has been processed successfully.</p>
           <div class="d-flex justify-content-center">
@@ -166,6 +166,7 @@ function submitAddModal() {
     })
   })
 }
+//Wallet Withdrawal Modal
 function submitWithdrawal() {
   var modalBody = document.querySelector("#withdrawalModal .modal-body")
   var modalTitle = document.querySelector("#withdrawalModal .modal-title")
@@ -177,7 +178,7 @@ function submitWithdrawal() {
   // Update the modal body
   modalBody.innerHTML = `
         <div class="text-center">
-          <img src="/assets/images/payment-error.svg" class="img-fluid" alt="Payment Failed Image">
+          <img src="../../assets/images/payment-error.svg" class="img-fluid" alt="Payment Failed Image">
           <h5 class="mt-3 fw-bold">Withdrawal Failed</h5>
           <p>It looks like your withdrawal didn't go through, you can try again!</p>
 
@@ -203,7 +204,7 @@ function submitWithdrawal() {
     // Update the modal body
     modalBody.innerHTML = `
         <div class="text-center">
-          <img src="/assets/images/congrats.svg" class="img-fluid" alt="Payment Failed Image">
+          <img src="../../assets/images/congrats.svg" class="img-fluid" alt="Payment Failed Image">
           <h5 class="mt-3 fw-bold">Congratulations</h5>
           <p>Your request was sent successfully.</p>
           <div class="d-flex justify-content-center">

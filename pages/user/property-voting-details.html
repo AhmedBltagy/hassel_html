@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Haseel Invest|Explore</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../../assets/images/logo.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item ms-lg-4">
+              <a class="nav-link" href="#">Explore</a>
+            </li>
+            <li class="nav-item ms-lg-4">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item ms-lg-4">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item ms-lg-4">
+              <a class="nav-link" href="#">FAQs</a>
+            </li>
+          </ul>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle w-100"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user"></i> User Profile
+            </button>
+            <ul
+              class="dropdown-menu w-100 mt-4"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <li>
+                <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Wallet</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Notifications</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Saved Properties</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">User Profile</a></li>
+            </ul>
+          </div>
+          <button id="lang-toggle" class="lang-btn">EN</button>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="property-detils mt-5">
+      <div class="property-details-heading text-center">
+        <h1 class="fs-2">Property Voting</h1>
+
+        <div
+          class="breadcrumb d-inline-flex justify-content-center bg-light p-2 px-5 rounded"
+        >
+          <span class="text-muted mx-2">
+            <a href="../../index.html" class="text-decoration-none text-reset">
+              <i class="fa-solid fa-house"></i>
+            </a>
+            <i class="fa-solid fa-chevron-right me-1"></i>
+
+            ...
+
+            <i class="fa-solid fa-chevron-right me-1"></i>
+            <a
+              href="../../explore.html"
+              class="text-decoration-none text-reset"
+            >
+              <i class="fa-regular fa-building"></i> Property Votes
+            </a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          <span class="mx-2 current">
+            <i class="fa-regular fa-building"></i> Voting
+          </span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div
+          style="max-height: 400px"
+          class="d-flex justify-content-center align-items-center overflow-hidden my-5 rounded"
+        >
+          <img
+            src="../../assets/images/property-details.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="d-flex justify-content-between">
+          <h3 class="fw-bold">Property Name</h3>
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#resVoteModal"
+            class="btn-main"
+            onclick="chartStatus_1()"
+          >
+            Voting Summary <i class="fa-solid fa-arrow-right ms-1"></i>
+          </button>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="resVoteModal"
+          tabindex="-1"
+          aria-labelledby="modalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header justify-content-center">
+                <h5 class="modal-title" id="modalLabel">Property Voting</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h6 class="fw-semibold main-color">Question 1 of 2</h6>
+                <p>Question content will be written here?</p>
+                <div class="progress my-2 bg-abstain">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 100%"
+                  >
+                    Abstain
+                  </div>
+                </div>
+                <div class="progress my-2 bg-yes">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 100%"
+                  >
+                    Yes
+                  </div>
+                </div>
+                <div class="progress my-2 bg-no">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 100%"
+                  >
+                    No
+                  </div>
+                </div>
+                <div
+                  class="chart-container my-5 d-flex justify-content-center align-items-center"
+                >
+                  <!-- Canvas element for the pie chart -->
+                  <canvas
+                    id="voteResultsChart"
+                    style="width: 100px; height: 100px"
+                  ></canvas>
+                </div>
+
+                <div class="text-center mt-3">
+                  <!-- Dynamically updated text below the chart could go here -->
+                </div>
+              </div>
+              <div class="modal-footer justify-content-center">
+                <button
+                  type="button"
+                  class="btn-main w-100"
+                  onclick="nextQestStat()"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="property-num">ha-44</h4>
+        <p>City no 1- District no 2</p>
+
+        <div class="prop-details rounded-3 fit-content p-2">
+          <span class="px-2 border-end"
+            ><i class="fa-solid fa-bed fa-xs me-1"></i> 4 Beds</span
+          >
+          <span class="px-2 border-end"
+            ><i class="fa-solid fa-bath fa-xs me-1"></i>3 Bath</span
+          >
+          <span class="px-2"
+            ><i class="fa-solid fa-house fa-xs me-1"></i>320 SQM</span
+          >
+        </div>
+        <p class="my-3">
+          Perferendis accusantium facere beatae ut voluptatum ut. Amet et
+          aspernatur aut corporis quia tenetur. Velit iste ut fugit facere earum
+          iusto qui ea. Dolore architecto quos non perspiciatis totam laborum.
+          Rem incidunt commodi. Eius non quia nam id nesciunt inventore ut
+          voluptates. Consequatur ut facilis est voluptas. Earum odio illo illo
+          rerum. Dolor sed laborum debitis. Laboriosam repellendus impedit
+          natus. Enim ut ut. Dolor voluptas tempore molestiae aliquam ipsa
+          aperiam. Et sequi expedita est. Adipisci itaque velit quas qui ipsum
+          omnis consequatur doloremque.
+        </p>
+
+        <div class="row my-4 light-bg p-4 rounded text-color">
+          <div class="col">
+            <h5>Property Voting 10</h5>
+            <p class="my-3">
+              Perferendis accusantium facere beatae ut voluptatum ut. Amet et
+              aspernatur aut corporis quia tenetur. Velit iste ut fugit facere
+              earum iusto qui ea. Dolore architecto quos non perspiciatis totam
+              laborum. Rem incidunt commodi. Eius non quia nam id nesciunt
+              inventore ut voluptates. Consequatur ut facilis est voluptas.
+              Earum odio illo illo rerum. Dolor sed laborum debitis. Laboriosam
+              repellendus impedit natus. Enim ut ut. Dolor voluptas tempore
+              molestiae aliquam ipsa aperiam. Et sequi expedita est. Adipisci
+              itaque velit quas qui ipsum omnis consequatur doloremque.
+            </p>
+            <!-- Flex Container -->
+            <div class="d-flex justify-content-between">
+              <div id="start-date">
+                Start Date: <span class="blue-color">26-11-2023</span>
+              </div>
+              <div id="end-date">
+                End Date: <span class="blue-color">26-11-2023</span>
+              </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div
+              class="progress date-progress mt-3"
+              style="height: 20px; border-radius: 10px"
+            >
+              <div
+                id="progressBar"
+                class="progress-bar"
+                role="progressbar"
+                style="width: 100%"
+                aria-valuenow="350"
+                aria-valuemin="0"
+                aria-valuemax="500"
+              ></div>
+            </div>
+            <button class="btn-main my-4">
+              Voting Summary <i class="fa-solid fa-arrow-right ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-lg-start px-5 py-4">
+      <div class="container">
+        <div class="row">
+          <!-- First Column -->
+          <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
+            <img
+              src="../../assets/images/logo-white.svg"
+              alt="Logo"
+              style="width: 100px; height: auto"
+            />
+
+            <p class="py-4">
+              Copyright &copy; 2020 Haseel Invest<br />
+              All rights reserved
+            </p>
+            <!-- Social Networks -->
+            <div class="social flex jsutify-content-start">
+              <a href="#" class="text-decoration-none">
+                <i class="fa-brands fa-instagram me-2"></i>
+              </a>
+
+              <a href="#" class="text-decoration-none">
+                <i class="fa-brands fa-dribbble mx-2"></i>
+              </a>
+
+              <a href="#" class="text-decoration-none">
+                <i class="fa-brands fa-twitter mx-2"></i>
+              </a>
+
+              <a href="#" class="text-decoration-none">
+                <i class="fa-brands fa-youtube mx-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Second Column -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-capitalize text-white mb-3 fw-semibold">company</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-decoration-none">About us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none">Blog</a>
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none">Contact us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none">Pricing</a>
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none">Testimonials</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Third Column -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-capitalize text-white mb-3 fw-semibold">support</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-decoration-none">Help center</a>
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none">Terms of service </a>
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none">Legal </a>
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none">Privacy policy </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Fourth Column -->
+          <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-capitalize text-white mb-3 fw-semibold">
+              Stay up to date
+            </h5>
+            <div
+              class="form-outline sub-form form-white mb-4 position-relative"
+            >
+              <input
+                type="email"
+                id="subscribe-form"
+                class="form-control rounded border-0 shadow-none"
+                placeholder="Your email address"
+              />
+              <!-- Send Icon -->
+              <a href="#!" class="btn mb-4 position-absolute top-0 end-0">
+                <i class="fa-regular fa-paper-plane text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js.map"></script>
+    <script src="../../js/all.min.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      function chartStatus_1() {
+        var ctx = document.getElementById("voteResultsChart").getContext("2d")
+
+        var voteResultsChart = new Chart(ctx, {
+          type: "doughnut",
+          data: {
+            labels: ["Abstain", "Yes", "No"],
+            datasets: [
+              {
+                data: [10, 25, 65], // Replace with actual data
+                backgroundColor: ["#FBBF24", "#10B981", "#EF4444"],
+                borderColor: ["#ffffff"],
+                borderWidth: 2,
+              },
+            ],
+          },
+          options: {
+            cutout: "50%",
+            maintainAspectRatio: true,
+            responsive: false,
+            aspectRatio: 1, // Keep the chart aspect ratio as a square
+            plugins: {
+              legend: {
+                display: false, // Hides the legend
+              },
+            },
+          },
+        })
+      }
+
+      // Save the original content of the vote modal
+      var originalModalBody = document.querySelector(
+        "#resVoteModal .modal-body"
+      ).innerHTML
+      var originalModalFooter = document.querySelector(
+        "#resVoteModal .modal-footer"
+      ).innerHTML
+
+      function nextQestStat() {
+        var modalBody = document.querySelector("#resVoteModal .modal-body")
+        var modalFooter = document.querySelector("#resVoteModal .modal-footer")
+
+        modalBody.innerHTML = `
+        
+                <h6 class="fw-semibold main-color">Question 2 of 2</h6>
+                <p>Question content will be written here?</p>
+                <div class="progress my-2 bg-abstain">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 100%"
+                  >
+                    Abstain
+                  </div>
+                </div>
+                <div class="progress my-2 bg-yes">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 100%"
+                  >
+                    Yes
+                  </div>
+                </div>
+                <div class="progress my-2 bg-no">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 100%"
+                  >
+                    No
+                  </div>
+                </div>
+                <div
+                  class="chart-container my-5 d-flex justify-content-center align-items-center"
+                >
+                  <!-- Canvas element for the pie chart -->
+                  <canvas
+                    id="voteResultsChart2"
+                    style="width: 100px; height: 100px"
+                  ></canvas>
+                </div>
+
+                <div class="text-center mt-3">
+                  <!-- Dynamically updated text below the chart could go here -->
+                </div>
+              `
+        modalFooter.innerHTML = `
+    <button type="button" class="second-btn" onclick="previousQuestModal()">Previous</button>
+    <button type="button" class="btn-main" data-bs-dismiss="modal">Close</button>
+    
+  `
+        var ctx = document.getElementById("voteResultsChart2").getContext("2d")
+
+        var voteResultsChart = new Chart(ctx, {
+          type: "doughnut",
+          data: {
+            labels: ["Abstain", "Yes", "No"],
+            datasets: [
+              {
+                data: [10, 25, 65], // Replace with actual data
+                backgroundColor: ["#FBBF24", "#10B981", "#EF4444"],
+                borderColor: ["#ffffff"],
+                borderWidth: 2,
+              },
+            ],
+          },
+          options: {
+            cutout: "50%",
+            maintainAspectRatio: true,
+            responsive: false,
+            aspectRatio: 1, // Keep the chart aspect ratio as a square
+            plugins: {
+              legend: {
+                display: false, // Hides the legend
+              },
+            },
+          },
+        })
+      }
+
+      // Function to restore the original content of the modal
+
+      function previousQuestModal() {
+        var modalBody = document.querySelector("#resVoteModal .modal-body")
+        var modalFooter = document.querySelector("#resVoteModal .modal-footer")
+        modalBody.innerHTML = originalModalBody
+        modalFooter.innerHTML = originalModalFooter
+        chartStatus_1()
+      }
+    </script>
+  </body>
+</html>
