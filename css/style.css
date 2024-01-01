@@ -8,6 +8,7 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
 .text-color {
   color: #343434;
 }
@@ -232,6 +233,16 @@ nav .nav-link.active {
 }
 .property-card a {
   color: var(--main-color);
+}
+.property-card .img-container {
+  width: 400px;  
+  height: 300px; 
+  overflow: hidden; 
+}
+.property-card .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #sec-3 span {
   border-color: var(--main-color) !important;

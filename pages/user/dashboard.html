@@ -267,6 +267,7 @@
                             <th scope="col">Property</th>
                             <th scope="col">Amount</th>
                             <th scope="col">Reference Code</th>
+                            <th scope="col"></th>
                           </tr>
                         </thead>
                         <tbody>
@@ -275,27 +276,38 @@
                             <td>Property</td>
                             <td>Amount</td>
                             <td>Reference Code</td>
+                            <td><input type="checkbox" /></td>
                           </tr>
                           <tr>
                             <td>ID Number</td>
                             <td>Property</td>
                             <td>Amount</td>
                             <td>Reference Code</td>
+                            <td><input type="checkbox" /></td>
                           </tr>
                           <tr>
                             <td>ID Number</td>
                             <td>Property</td>
                             <td>Amount</td>
                             <td>Reference Code</td>
+                            <td><input type="checkbox" /></td>
                           </tr>
                           <tr>
                             <td>ID Number</td>
                             <td>Property</td>
                             <td>Amount</td>
                             <td>Reference Code</td>
+                            <td><input type="checkbox" /></td>
                           </tr>
                         </tbody>
+                 
                       </table>
+                      <div class="table-footer my-3">
+                        <div class="btns d-flex justify-content-between">
+                          <button class="second-btn">Resale</button>
+                          <button class="btn-main">View More</button>
+                        </div>
+                      </div>
                     </div>
 
                     <div class="pending my-4">
@@ -318,6 +330,11 @@
                           </tr>
                         </tbody>
                       </table>
+                      <div class="table-footer my-3">
+                        <div class="btns d-flex justify-content-end">
+                          <button class="btn-main">View More</button>
+                        </div>
+                      </div>
                     </div>
 
                     <div class="past my-4">
@@ -361,6 +378,11 @@
                           </tr>
                         </tbody>
                       </table>
+                      <div class="table-footer my-3">
+                        <div class="btns d-flex justify-content-end">
+                          <button class="btn-main">View More</button>
+                        </div>
+                      </div>
                     </div>
                     <div class="declined my-4">
                       <h4>Declined</h4>
@@ -382,6 +404,11 @@
                           </tr>
                         </tbody>
                       </table>
+                      <div class="table-footer my-3">
+                        <div class="btns d-flex justify-content-end">
+                          <button class="btn-main">View More</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -475,6 +502,11 @@
                       <span class="notification-time ms-auto text-muted"
                         >2023-05-22 17:47</span
                       >
+                    </div>
+                    <div class="noti-footer my-3">
+                      <div class="btns d-flex justify-content-center">
+                        <button class="btn-main">View More</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -781,6 +813,11 @@
                                 >2023-05-22 17:47</span
                               >
                             </div>
+                            <div class="transaction-footer my-3">
+                              <div class="btns d-flex justify-content-center">
+                                <button class="btn-main">View More</button>
+                              </div>
+                            </div>
                           </div>
 
                           <div id="deposit" class="tab-pane fade">
@@ -845,6 +882,11 @@
                                 >2023-05-22 17:47</span
                               >
                             </div>
+                            <div class="transaction-footer my-3">
+                              <div class="btns d-flex justify-content-center">
+                                <button class="btn-main">View More</button>
+                              </div>
+                            </div>
                           </div>
                           <div id="withdrawal" class="tab-pane fade">
                             <br />
@@ -888,6 +930,11 @@
                                 >2023-05-22 17:47</span
                               >
                             </div>
+                            <div class="transaction-footer my-3">
+                              <div class="btns d-flex justify-content-center">
+                                <button class="btn-main">View More</button>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -909,10 +956,11 @@
                           <div class="d-flex flex-column align-items-center">
                             <div class="img-container">
                               <img
-                                class="w-100 rounded-3"
-                                src="../../assets/images/propert-3.png"
-                                alt="property"
-                              />
+                              class="w-100 rounded-3"
+                              src="../../assets/images/property-1.png"
+                              alt="property"
+                              onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                          />
                             </div>
                             <div
                               class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
@@ -950,94 +998,11 @@
                           <div class="d-flex flex-column align-items-center">
                             <div class="img-container">
                               <img
-                                class="w-100 rounded-3"
-                                src="../../assets/images/property-2.png"
-                                alt="property"
-                              />
-                            </div>
-                            <div
-                              class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
-                            >
-                              <h6 class="fw-bold">Property Name</h6>
-                              <p class="property-num">ha-44</p>
-                              <p>City no 1- District no 2</p>
-                              <div class="prop-details rounded-3 p-1">
-                                <span class="px-2 border-end"
-                                  ><i class="fa-solid fa-bed fa-xs me-1"></i> 4
-                                  Beds</span
-                                >
-                                <span class="px-2 border-end"
-                                  ><i class="fa-solid fa-bath fa-xs me-1"></i>3
-                                  Bath</span
-                                >
-                                <span class="px-2"
-                                  ><i class="fa-solid fa-house fa-xs me-1"></i
-                                  >320 SQM</span
-                                >
-                              </div>
-                              <a
-                                class="fw-bold text-decoration-none my-3 d-block"
-                                href="#"
-                                >View more
-                                <i class="fa-solid fa-arrow-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row prop-row">
-                      <div class="col-lg-6 mb-4">
-                        <div class="property-card position-relative rounded-3">
-                          <!-- Property card content here -->
-                          <div class="d-flex flex-column align-items-center">
-                            <div class="img-container">
-                              <img
-                                class="w-100 rounded-3"
-                                src="../../assets/images/propert-3.png"
-                                alt="property"
-                              />
-                            </div>
-                            <div
-                              class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
-                            >
-                              <h6 class="fw-bold">Property Name</h6>
-                              <p class="property-num">ha-44</p>
-                              <p>City no 1- District no 2</p>
-                              <div class="prop-details rounded-3 p-1">
-                                <span class="px-2 border-end"
-                                  ><i class="fa-solid fa-bed fa-xs me-1"></i> 4
-                                  Beds</span
-                                >
-                                <span class="px-2 border-end"
-                                  ><i class="fa-solid fa-bath fa-xs me-1"></i>3
-                                  Bath</span
-                                >
-                                <span class="px-2"
-                                  ><i class="fa-solid fa-house fa-xs me-1"></i
-                                  >320 SQM</span
-                                >
-                              </div>
-                              <a
-                                class="fw-bold text-decoration-none my-3 d-block"
-                                href="#"
-                                >View more
-                                <i class="fa-solid fa-arrow-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 mb-4">
-                        <div class="property-card position-relative rounded-3">
-                          <!-- Property card content here -->
-                          <div class="d-flex flex-column align-items-center">
-                            <div class="img-container">
-                              <img
-                                class="w-100 rounded-3"
-                                src="../../assets/images/property-2.png"
-                                alt="property"
-                              />
+                              class="w-100 rounded-3"
+                              src="../../assets/images/property-1.png"
+                              alt="property"
+                              onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                          />
                             </div>
                             <div
                               class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
@@ -1077,10 +1042,11 @@
                           <div class="d-flex flex-column align-items-center">
                             <div class="img-container">
                               <img
-                                class="w-100 rounded-3"
-                                src="../../assets/images/propert-3.png"
-                                alt="property"
-                              />
+                              class="w-100 rounded-3"
+                              src="../../assets/images/property-1.png"
+                              alt="property"
+                              onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                          />
                             </div>
                             <div
                               class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
@@ -1118,10 +1084,11 @@
                           <div class="d-flex flex-column align-items-center">
                             <div class="img-container">
                               <img
-                                class="w-100 rounded-3"
-                                src="../../assets/images/property-2.png"
-                                alt="property"
-                              />
+                              class="w-100 rounded-3"
+                              src="../../assets/images/property-1.png"
+                              alt="property"
+                              onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                          />
                             </div>
                             <div
                               class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
@@ -1161,10 +1128,11 @@
                           <div class="d-flex flex-column align-items-center">
                             <div class="img-container">
                               <img
-                                class="w-100 rounded-3"
-                                src="../../assets/images/propert-3.png"
-                                alt="property"
-                              />
+                              class="w-100 rounded-3"
+                              src="../../assets/images/property-1.png"
+                              alt="property"
+                              onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                          />
                             </div>
                             <div
                               class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
@@ -1202,10 +1170,11 @@
                           <div class="d-flex flex-column align-items-center">
                             <div class="img-container">
                               <img
-                                class="w-100 rounded-3"
-                                src="../../assets/images/property-2.png"
-                                alt="property"
-                              />
+                              class="w-100 rounded-3"
+                              src="../../assets/images/property-1.png"
+                              alt="property"
+                              onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                          />
                             </div>
                             <div
                               class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
@@ -1236,6 +1205,97 @@
                             </div>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                    <div class="row prop-row">
+                      <div class="col-lg-6 mb-4">
+                        <div class="property-card position-relative rounded-3">
+                          <!-- Property card content here -->
+                          <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                              <img
+                              class="w-100 rounded-3"
+                              src="../../assets/images/property-1.png"
+                              alt="property"
+                              onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                          />
+                            </div>
+                            <div
+                              class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                            >
+                              <h6 class="fw-bold">Property Name</h6>
+                              <p class="property-num">ha-44</p>
+                              <p>City no 1- District no 2</p>
+                              <div class="prop-details rounded-3 p-1">
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bed fa-xs me-1"></i> 4
+                                  Beds</span
+                                >
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bath fa-xs me-1"></i>3
+                                  Bath</span
+                                >
+                                <span class="px-2"
+                                  ><i class="fa-solid fa-house fa-xs me-1"></i
+                                  >320 SQM</span
+                                >
+                              </div>
+                              <a
+                                class="fw-bold text-decoration-none my-3 d-block"
+                                href="#"
+                                >View more
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <div class="property-card position-relative rounded-3">
+                          <!-- Property card content here -->
+                          <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                              <img
+                              class="w-100 rounded-3"
+                              src="../../assets/images/property-1.png"
+                              alt="property"
+                              onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                          />
+                            </div>
+                            <div
+                              class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                            >
+                              <h6 class="fw-bold">Property Name</h6>
+                              <p class="property-num">ha-44</p>
+                              <p>City no 1- District no 2</p>
+                              <div class="prop-details rounded-3 p-1">
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bed fa-xs me-1"></i> 4
+                                  Beds</span
+                                >
+                                <span class="px-2 border-end"
+                                  ><i class="fa-solid fa-bath fa-xs me-1"></i>3
+                                  Bath</span
+                                >
+                                <span class="px-2"
+                                  ><i class="fa-solid fa-house fa-xs me-1"></i
+                                  >320 SQM</span
+                                >
+                              </div>
+                              <a
+                                class="fw-bold text-decoration-none my-3 d-block"
+                                href="#"
+                                >View more
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="saved-footer my-3">
+                      <div class="btns d-flex justify-content-center">
+                        <button class="btn-main">View More</button>
                       </div>
                     </div>
                   </div>
@@ -1282,13 +1342,14 @@
                               <div
                                 class="d-flex flex-column align-items-center"
                               >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/propert-3.png"
-                                    alt="property"
-                                  />
-                                </div>
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
+                              </div>
                                 <div
                                   class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
                                 >
@@ -1333,117 +1394,14 @@
                               <div
                                 class="d-flex flex-column align-items-center"
                               >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/property-2.png"
-                                    alt="property"
-                                  />
-                                </div>
-                                <div
-                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
-                                >
-                                  <h6 class="fw-bold">Property Name</h6>
-                                  <p class="property-num">ha-44</p>
-                                  <p>City no 1- District no 2</p>
-                                  <div class="prop-details rounded-3 p-1">
-                                    <span class="px-2 border-end"
-                                      ><i
-                                        class="fa-solid fa-bed fa-xs me-1"
-                                      ></i>
-                                      4 Beds</span
-                                    >
-                                    <span class="px-2 border-end"
-                                      ><i
-                                        class="fa-solid fa-bath fa-xs me-1"
-                                      ></i
-                                      >3 Bath</span
-                                    >
-                                    <span class="px-2"
-                                      ><i
-                                        class="fa-solid fa-house fa-xs me-1"
-                                      ></i
-                                      >320 SQM</span
-                                    >
-                                  </div>
-                                  <a
-                                    class="fw-bold text-decoration-none my-3 d-block"
-                                    href="./property-voting.html"
-                                    >Vote Now
-                                    <i class="fa-solid fa-arrow-right"></i
-                                  ></a>
-                                </div>
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row prop-row">
-                          <div class="col-lg-6 mb-4">
-                            <div
-                              class="property-card position-relative rounded-3"
-                            >
-                              <!-- Property card content here -->
-                              <div
-                                class="d-flex flex-column align-items-center"
-                              >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/propert-3.png"
-                                    alt="property"
-                                  />
-                                </div>
-                                <div
-                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
-                                >
-                                  <h6 class="fw-bold">Property Name</h6>
-                                  <p class="property-num">ha-44</p>
-                                  <p>City no 1- District no 2</p>
-                                  <div class="prop-details rounded-3 p-1">
-                                    <span class="px-2 border-end"
-                                      ><i
-                                        class="fa-solid fa-bed fa-xs me-1"
-                                      ></i>
-                                      4 Beds</span
-                                    >
-                                    <span class="px-2 border-end"
-                                      ><i
-                                        class="fa-solid fa-bath fa-xs me-1"
-                                      ></i
-                                      >3 Bath</span
-                                    >
-                                    <span class="px-2"
-                                      ><i
-                                        class="fa-solid fa-house fa-xs me-1"
-                                      ></i
-                                      >320 SQM</span
-                                    >
-                                  </div>
-                                  <a
-                                    class="fw-bold text-decoration-none my-3 d-block"
-                                    href="./property-voting.html"
-                                    >Vote Now
-                                    <i class="fa-solid fa-arrow-right"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 mb-4">
-                            <div
-                              class="property-card position-relative rounded-3"
-                            >
-                              <!-- Property card content here -->
-                              <div
-                                class="d-flex flex-column align-items-center"
-                              >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/property-2.png"
-                                    alt="property"
-                                  />
-                                </div>
                                 <div
                                   class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
                                 >
@@ -1490,13 +1448,14 @@
                               <div
                                 class="d-flex flex-column align-items-center"
                               >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/propert-3.png"
-                                    alt="property"
-                                  />
-                                </div>
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
+                              </div>
                                 <div
                                   class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
                                 >
@@ -1541,13 +1500,14 @@
                               <div
                                 class="d-flex flex-column align-items-center"
                               >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/property-2.png"
-                                    alt="property"
-                                  />
-                                </div>
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
+                              </div>
                                 <div
                                   class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
                                 >
@@ -1594,13 +1554,14 @@
                               <div
                                 class="d-flex flex-column align-items-center"
                               >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/propert-3.png"
-                                    alt="property"
-                                  />
-                                </div>
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
+                              </div>
                                 <div
                                   class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
                                 >
@@ -1645,13 +1606,14 @@
                               <div
                                 class="d-flex flex-column align-items-center"
                               >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/property-2.png"
-                                    alt="property"
-                                  />
-                                </div>
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
+                              </div>
                                 <div
                                   class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
                                 >
@@ -1687,6 +1649,117 @@
                                 </div>
                               </div>
                             </div>
+                          </div>
+                        </div>
+                        <div class="row prop-row">
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
+                              </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting.html"
+                                    >Vote Now
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
+                              </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting.html"
+                                    >Vote Now
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="votes-footer my-3">
+                          <div class="btns d-flex justify-content-center">
+                            <button class="btn-main">View More</button>
                           </div>
                         </div>
                       </div>
@@ -1703,13 +1776,14 @@
                               <div
                                 class="d-flex flex-column align-items-center"
                               >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/propert-3.png"
-                                    alt="property"
-                                  />
-                                </div>
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
+                              </div>
                                 <div
                                   class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
                                 >
@@ -1754,117 +1828,14 @@
                               <div
                                 class="d-flex flex-column align-items-center"
                               >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/property-2.png"
-                                    alt="property"
-                                  />
-                                </div>
-                                <div
-                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
-                                >
-                                  <h6 class="fw-bold">Property Name</h6>
-                                  <p class="property-num">ha-44</p>
-                                  <p>City no 1- District no 2</p>
-                                  <div class="prop-details rounded-3 p-1">
-                                    <span class="px-2 border-end"
-                                      ><i
-                                        class="fa-solid fa-bed fa-xs me-1"
-                                      ></i>
-                                      4 Beds</span
-                                    >
-                                    <span class="px-2 border-end"
-                                      ><i
-                                        class="fa-solid fa-bath fa-xs me-1"
-                                      ></i
-                                      >3 Bath</span
-                                    >
-                                    <span class="px-2"
-                                      ><i
-                                        class="fa-solid fa-house fa-xs me-1"
-                                      ></i
-                                      >320 SQM</span
-                                    >
-                                  </div>
-                                  <a
-                                    class="fw-bold text-decoration-none my-3 d-block"
-                                    href="./property-voting-details.html"
-                                    >Voting Summary
-                                    <i class="fa-solid fa-arrow-right"></i
-                                  ></a>
-                                </div>
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row prop-row">
-                          <div class="col-lg-6 mb-4">
-                            <div
-                              class="property-card position-relative rounded-3"
-                            >
-                              <!-- Property card content here -->
-                              <div
-                                class="d-flex flex-column align-items-center"
-                              >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/propert-3.png"
-                                    alt="property"
-                                  />
-                                </div>
-                                <div
-                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
-                                >
-                                  <h6 class="fw-bold">Property Name</h6>
-                                  <p class="property-num">ha-44</p>
-                                  <p>City no 1- District no 2</p>
-                                  <div class="prop-details rounded-3 p-1">
-                                    <span class="px-2 border-end"
-                                      ><i
-                                        class="fa-solid fa-bed fa-xs me-1"
-                                      ></i>
-                                      4 Beds</span
-                                    >
-                                    <span class="px-2 border-end"
-                                      ><i
-                                        class="fa-solid fa-bath fa-xs me-1"
-                                      ></i
-                                      >3 Bath</span
-                                    >
-                                    <span class="px-2"
-                                      ><i
-                                        class="fa-solid fa-house fa-xs me-1"
-                                      ></i
-                                      >320 SQM</span
-                                    >
-                                  </div>
-                                  <a
-                                    class="fw-bold text-decoration-none my-3 d-block"
-                                    href="./property-voting-details.html"
-                                    >Voting Summary
-                                    <i class="fa-solid fa-arrow-right"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 mb-4">
-                            <div
-                              class="property-card position-relative rounded-3"
-                            >
-                              <!-- Property card content here -->
-                              <div
-                                class="d-flex flex-column align-items-center"
-                              >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/property-2.png"
-                                    alt="property"
-                                  />
-                                </div>
                                 <div
                                   class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
                                 >
@@ -1911,13 +1882,14 @@
                               <div
                                 class="d-flex flex-column align-items-center"
                               >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/propert-3.png"
-                                    alt="property"
-                                  />
-                                </div>
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
+                              </div>
                                 <div
                                   class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
                                 >
@@ -1962,13 +1934,14 @@
                               <div
                                 class="d-flex flex-column align-items-center"
                               >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/property-2.png"
-                                    alt="property"
-                                  />
-                                </div>
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
+                              </div>
                                 <div
                                   class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
                                 >
@@ -2015,13 +1988,14 @@
                               <div
                                 class="d-flex flex-column align-items-center"
                               >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/propert-3.png"
-                                    alt="property"
-                                  />
-                                </div>
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
+                              </div>
                                 <div
                                   class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
                                 >
@@ -2066,13 +2040,14 @@
                               <div
                                 class="d-flex flex-column align-items-center"
                               >
-                                <div class="img-container">
-                                  <img
-                                    class="w-100 rounded-3"
-                                    src="../../assets/images/property-2.png"
-                                    alt="property"
-                                  />
-                                </div>
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
+                              </div>
                                 <div
                                   class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
                                 >
@@ -2108,6 +2083,117 @@
                                 </div>
                               </div>
                             </div>
+                          </div>
+                        </div>
+                        <div class="row prop-row">
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
+                              </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting-details.html"
+                                    >Voting Summary
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <div
+                              class="property-card position-relative rounded-3"
+                            >
+                              <!-- Property card content here -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                              <div class="img-container">
+                                <img
+                                class="w-100 rounded-3"
+                                src="../../assets/images/property-1.png"
+                                alt="property"
+                                onerror="this.onerror=null; this.src='../../assets/images/placeholder-image.jpg'"
+                            />
+                              </div>
+                                <div
+                                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 px-3 text-center"
+                                >
+                                  <h6 class="fw-bold">Property Name</h6>
+                                  <p class="property-num">ha-44</p>
+                                  <p>City no 1- District no 2</p>
+                                  <div class="prop-details rounded-3 p-1">
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bed fa-xs me-1"
+                                      ></i>
+                                      4 Beds</span
+                                    >
+                                    <span class="px-2 border-end"
+                                      ><i
+                                        class="fa-solid fa-bath fa-xs me-1"
+                                      ></i
+                                      >3 Bath</span
+                                    >
+                                    <span class="px-2"
+                                      ><i
+                                        class="fa-solid fa-house fa-xs me-1"
+                                      ></i
+                                      >320 SQM</span
+                                    >
+                                  </div>
+                                  <a
+                                    class="fw-bold text-decoration-none my-3 d-block"
+                                    href="./property-voting-details.html"
+                                    >Voting Summary
+                                    <i class="fa-solid fa-arrow-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="votes-footer my-3">
+                          <div class="btns d-flex justify-content-center">
+                            <button class="btn-main">View More</button>
                           </div>
                         </div>
                       </div>
