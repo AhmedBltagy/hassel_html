@@ -248,6 +248,13 @@ nav .nav-link.active {
   border-color: var(--main-color) !important;
 }
 
+.carousel-inner img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
 /* Section 5 Home */
 
 #sec-5 .stat-item svg {
