@@ -255,6 +255,23 @@ nav .nav-link.active {
   border-radius: 10px;
 }
 
+/* like icon */
+
+.like-icon {
+  cursor: pointer;
+}
+
+.like-icon .fa-heart {
+  color: white;
+  font-size: 24px; /* Adjust size as needed */
+}
+
+.like-icon .fa-heart.liked {
+  color: #F44; /* Color when liked */
+}
+
+
+
 /* Section 5 Home */
 
 #sec-5 .stat-item svg {

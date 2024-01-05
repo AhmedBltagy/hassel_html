@@ -5,6 +5,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
+// like icon
+function toggleLike(element) {
+  element.classList.toggle('liked');
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   var tabs = document.querySelectorAll(".sidebar .nav-link");
 
