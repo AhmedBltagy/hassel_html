@@ -5,10 +5,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
-// like icon
+
 function toggleLike(element) {
-  element.classList.toggle('liked');
+  // Toggle the clicked icon's visibility
+  element.style.display = 'none';
+
+  // Find and toggle the sibling icon's visibility
+  var siblingIcon = element.nextElementSibling || element.previousElementSibling;
+  siblingIcon.style.display = 'inline-block';
 }
+
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   var tabs = document.querySelectorAll(".sidebar .nav-link");

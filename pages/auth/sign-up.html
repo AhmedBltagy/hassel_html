@@ -13,9 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -80,15 +81,20 @@
                   placeholder="user@email.com"
                 />
               </div>
-              <div class="mb-3">
-                <label for="phone" class="form-label">Phone Number</label>
+
+              <div class="mb-3 w-100">
+                <label for="phone" class="form-label d-block">Phone Number</label>
                 <input
-                  type="tel"
-                  class="form-control p-2"
                   id="phone"
-                  placeholder="+966 123 456 7890"
+                  name="phone"  
+                  type="tel"
+                  class="form-control"
+                  placeholder="phone"
+                  
                 />
               </div>
+
+              
               <div class="mb-3">
                 <label for="nationality" class="form-label">Nationality</label>
                 <input
@@ -142,9 +148,19 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/intel-tel-input-rtl@1.0.0/index.min.js"></script>
     <script src="../../js/bootstrap.bundle.min.js"></script>
     <script src="../../js/bootstrap.bundle.min.js.map"></script>
     <script src="../../Js/all.min.js"></script>
     <script src="../../js/script.js"></script>
+    <script>
+      const phoneInputField = document.querySelector("#phone");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+
+    </script>
   </body>
 </html>

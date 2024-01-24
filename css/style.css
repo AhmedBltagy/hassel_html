@@ -259,17 +259,30 @@ nav .nav-link.active {
 
 .like-icon {
   cursor: pointer;
-}
-
-.like-icon .fa-heart {
-  color: white;
   font-size: 24px; /* Adjust size as needed */
 }
 
-.like-icon .fa-heart.liked {
-  color: #F44; /* Color when liked */
+#liked{
+  color: red; /* Solid heart in red color */
 }
 
+#regular {
+  color: white; /* Regular heart in white color */
+}
+
+/* 
+phone input */
+.iti--allow-dropdown{
+  width: 100%;
+}
+body[dir="rtl"] input#phone{
+text-align: right;
+padding-right: 3em;
+}
+body[dir="rtl"] .iti__flag-container{
+  right: 0 !important;
+  left: auto !important;
+}
 
 
 /* Section 5 Home */
@@ -457,7 +470,7 @@ nav .nav-link.active {
 }
 #resVoteModal .progress-bar {
   text-align: start !important;
-  padding: 10px;
+  
 }
 /* Table */
 table th,

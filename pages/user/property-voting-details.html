@@ -132,14 +132,23 @@
         </div>
         <div class="d-flex justify-content-between">
           <h3 class="fw-bold">Property Name</h3>
-          <button
-            data-bs-toggle="modal"
-            data-bs-target="#resVoteModal"
-            class="btn-main"
-            onclick="chartStatus_1()"
-          >
-            Voting Summary <i class="fa-solid fa-arrow-right ms-1"></i>
-          </button>
+          <div class="property-head d-flex justify-content-between">
+
+             <button
+             data-bs-toggle="modal"
+             data-bs-target="#resVoteModal"
+             class="btn-main me-1"
+             onclick="chartStatus_1()"
+           >
+             Voting Summary <i class="fa-solid fa-arrow-right ms-1"></i>
+           </button>
+           <div class="wish bg-dark p-2 rounded like-icon">
+            <i class="fa-solid fa-heart" id="liked" style="display: none;" onclick="toggleLike(this)"></i> <!-- Initially hidden -->
+            <i class="fa-regular fa-heart" id="regular" onclick="toggleLike(this)"></i> <!-- Initially shown -->
+         </div> 
+          </div>
+ 
+          
         </div>
         <!-- Modal -->
         <div
@@ -440,31 +449,31 @@
         
                 <h6 class="fw-semibold main-color">Question 2 of 2</h6>
                 <p>Question content will be written here?</p>
+                <label>&nbsp Abstain</label>
                 <div class="progress my-2 bg-abstain">
                   <div
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 100%"
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 100%"
                   >
-                    Abstain
                   </div>
                 </div>
+                <label>&nbsp Yes</label>
                 <div class="progress my-2 bg-yes">
                   <div
                     class="progress-bar"
                     role="progressbar"
                     style="width: 100%"
                   >
-                    Yes
                   </div>
                 </div>
+                <label>&nbsp No</label>
                 <div class="progress my-2 bg-no">
                   <div
                     class="progress-bar"
                     role="progressbar"
                     style="width: 100%"
                   >
-                    No
                   </div>
                 </div>
                 <div

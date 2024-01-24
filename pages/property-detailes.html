@@ -116,7 +116,13 @@
           </button>
         </div>
 
-        <h3 class="fw-bold">Property Name</h3>
+        <div class="property-head d-flex justify-content-between">
+          <h3 class="fw-bold">Property Name</h3>
+          <div class="wish bg-dark p-2 rounded like-icon">
+              <i class="fa-solid fa-heart" id="liked" style="display: none;" onclick="toggleLike(this)"></i> <!-- Initially hidden -->
+              <i class="fa-regular fa-heart" id="regular" onclick="toggleLike(this)"></i> <!-- Initially shown -->
+           </div> 
+          </div>
         <h4 class="property-num">ha-44</h4>
         <p>City no 1- District no 2</p>
 
