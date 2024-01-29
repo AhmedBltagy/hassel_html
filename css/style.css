@@ -259,6 +259,7 @@ nav .nav-link.active {
 .like-icon {
   cursor: pointer;
   font-size: 24px; /* Adjust size as needed */
+  right: 0;
 }
 
 #liked {
@@ -595,6 +596,9 @@ footer .sub-form input::placeholder {
   #dropdownMenuButton,
   .dropdown-menu {
     width: auto !important;
+  }
+  .like-icon {
+    right: 45px;
   }
 }
 
