@@ -333,10 +333,14 @@ body[dir="rtl"] .iti__flag-container {
 }
 
 .status .item {
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
   padding: 15px;
   background-color: white;
+  margin-block: 10px;
+  height: 150px;
+}
+.status .item .item h5,
+.status .item .item span {
+  word-wrap: break-word;
 }
 .status .item h5 {
   color: var(--blue-color);
@@ -599,6 +603,9 @@ footer .sub-form input::placeholder {
   }
   .like-icon {
     right: 45px;
+  }
+  .status .item {
+    padding: 10px;
   }
 }
 
