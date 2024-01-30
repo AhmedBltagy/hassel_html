@@ -128,31 +128,88 @@
           <h2 class="text-center fw-bold sec-title mb-5">Properties</h2>
 
           <!-- Reusable Property Card -->
+
           <div class="col-md-6 col-lg-4 mb-lg-0">
             <div class="property-card position-relative rounded-3">
-              <div class="like-icon position-absolute top-0 px-2 m-2">
-                <i
-                  class="fa-solid fa-heart"
-                  id="liked"
-                  style="display: none"
-                  onclick="toggleLike(this)"
-                ></i>
-                <!-- Initially hidden -->
-                <i
-                  class="fa-regular fa-heart"
-                  id="regular"
-                  onclick="toggleLike(this)"
-                ></i>
-                <!-- Initially shown -->
-              </div>
               <div class="d-flex flex-column align-items-center">
-                <div class="img-container">
+                <div class="img-container position-relative">
+                  <img
+                    class="w-100 rounded-3"
+                    src="assets/images/property-2.png"
+                    alt="property"
+                    onerror="this.onerror=null; this.src='assets/images/placeholder-image.jpg'"
+                  />
+                  <div class="like-icon position-absolute top-0 px-2 m-2">
+                    <i
+                      class="fa-solid fa-heart"
+                      id="liked"
+                      style="display: none"
+                      onclick="toggleLike(this)"
+                    ></i>
+                    <!-- Initially hidden -->
+                    <i
+                      class="fa-regular fa-heart"
+                      id="regular"
+                      onclick="toggleLike(this)"
+                    ></i>
+                    <!-- Initially shown -->
+                  </div>
+                </div>
+                <div
+                  class="card-details light-bg position-absolute top-100 translate-middle-y py-3 rounded-3 text-center"
+                >
+                  <h6 class="fw-bold">Property Name</h6>
+                  <p class="property-num">ha-44</p>
+                  <p>City no 1- District no 2</p>
+                  <div class="prop-details rounded-3 p-1">
+                    <span class="px-2 border-end"
+                      ><i class="fa-solid fa-bed fa-xs me-1"></i> 4 Beds</span
+                    >
+                    <span class="px-2 border-end"
+                      ><i class="fa-solid fa-bath fa-xs me-1"></i>3 Bath</span
+                    >
+                    <span class="px-2"
+                      ><i class="fa-solid fa-house fa-xs me-1"></i>320 SQM</span
+                    >
+                  </div>
+                  <a
+                    class="fw-bold text-decoration-none my-3 d-block"
+                    href="/pages/property-detailes.html"
+                    >View more <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- End of Reusable Property Card -->
+          <!-- Reusable Property Card -->
+
+          <div class="col-md-6 col-lg-4 mb-lg-0">
+            <div class="property-card position-relative rounded-3">
+              <div class="d-flex flex-column align-items-center">
+                <div class="img-container position-relative">
                   <img
                     class="w-100 rounded-3"
                     src="assets/images/property-1.png"
                     alt="property"
                     onerror="this.onerror=null; this.src='assets/images/placeholder-image.jpg'"
                   />
+                  <div class="like-icon position-absolute top-0 px-2 m-2">
+                    <i
+                      class="fa-solid fa-heart"
+                      id="liked"
+                      style="display: none"
+                      onclick="toggleLike(this)"
+                    ></i>
+                    <!-- Initially hidden -->
+                    <i
+                      class="fa-regular fa-heart"
+                      id="regular"
+                      onclick="toggleLike(this)"
+                    ></i>
+                    <!-- Initially shown -->
+                  </div>
                 </div>
                 <div
                   class="card-details light-bg position-absolute top-100 translate-middle-y py-3 rounded-3 text-center"
@@ -182,88 +239,35 @@
           </div>
           <!-- End of Reusable Property Card -->
           <!-- Reusable Property Card -->
+
           <div class="col-md-6 col-lg-4 mb-lg-0">
             <div class="property-card position-relative rounded-3">
-              <div class="like-icon position-absolute top-0 end-0 px-2 m-2">
-                <i
-                  class="fa-solid fa-heart"
-                  id="liked"
-                  style="display: none"
-                  onclick="toggleLike(this)"
-                ></i>
-                <!-- Initially hidden -->
-                <i
-                  class="fa-regular fa-heart"
-                  id="regular"
-                  onclick="toggleLike(this)"
-                ></i>
-                <!-- Initially shown -->
-              </div>
               <div class="d-flex flex-column align-items-center">
-                <div class="img-container">
+                <div class="img-container position-relative">
                   <img
                     class="w-100 rounded-3"
                     src="assets/images/property-1.png"
                     alt="property"
                     onerror="this.onerror=null; this.src='assets/images/placeholder-image.jpg'"
                   />
-                </div>
-                <div
-                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 text-center"
-                >
-                  <h6 class="fw-bold">Property Name</h6>
-                  <p class="property-num">ha-44</p>
-                  <p>City no 1- District no 2</p>
-                  <div class="prop-details rounded-3 p-1">
-                    <span class="px-2 border-end"
-                      ><i class="fa-solid fa-bed fa-xs me-1"></i> 4 Beds</span
-                    >
-                    <span class="px-2 border-end"
-                      ><i class="fa-solid fa-bath fa-xs me-1"></i>3 Bath</span
-                    >
-                    <span class="px-2"
-                      ><i class="fa-solid fa-house fa-xs me-1"></i>320 SQM</span
-                    >
+                  <div class="like-icon position-absolute top-0 px-2 m-2">
+                    <i
+                      class="fa-solid fa-heart"
+                      id="liked"
+                      style="display: none"
+                      onclick="toggleLike(this)"
+                    ></i>
+                    <!-- Initially hidden -->
+                    <i
+                      class="fa-regular fa-heart"
+                      id="regular"
+                      onclick="toggleLike(this)"
+                    ></i>
+                    <!-- Initially shown -->
                   </div>
-                  <a
-                    class="fw-bold text-decoration-none my-3 d-block"
-                    href="/pages/property-detailes.html"
-                    >View more <i class="fa-solid fa-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End of Reusable Property Card -->
-          <!-- Reusable Property Card -->
-          <div class="col-md-6 col-lg-4 mb-lg-0">
-            <div class="property-card position-relative rounded-3">
-              <div class="like-icon position-absolute top-0 end-0 px-2 m-2">
-                <i
-                  class="fa-solid fa-heart"
-                  id="liked"
-                  style="display: none"
-                  onclick="toggleLike(this)"
-                ></i>
-                <!-- Initially hidden -->
-                <i
-                  class="fa-regular fa-heart"
-                  id="regular"
-                  onclick="toggleLike(this)"
-                ></i>
-                <!-- Initially shown -->
-              </div>
-              <div class="d-flex flex-column align-items-center">
-                <div class="img-container">
-                  <img
-                    class="w-100 rounded-3"
-                    src="assets/images/property-1.png"
-                    alt="property"
-                    onerror="this.onerror=null; this.src='assets/images/placeholder-image.jpg'"
-                  />
                 </div>
                 <div
-                  class="card-details light-bg position-absolute top-100 translate-middle-y rounded-3 py-3 text-center"
+                  class="card-details light-bg position-absolute top-100 translate-middle-y py-3 rounded-3 text-center"
                 >
                   <h6 class="fw-bold">Property Name</h6>
                   <p class="property-num">ha-44</p>

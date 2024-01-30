@@ -237,6 +237,7 @@ nav .nav-link.active {
 .property-card .img-container {
   overflow: hidden;
   height: 300px;
+  width: 400px;
 }
 .property-card .img-container img {
   width: 100%;
@@ -601,9 +602,7 @@ footer .sub-form input::placeholder {
   .dropdown-menu {
     width: auto !important;
   }
-  .like-icon {
-    right: 45px;
-  }
+
   .status .item {
     padding: 10px;
   }
@@ -611,6 +610,15 @@ footer .sub-form input::placeholder {
 
 /* Tablet breakpoint */
 @media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* breakpoint to fix card */
+@media (min-width: 768px) and (max-width: 1400px) {
+  .property-card .img-container {
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+  }
 }
 
 /* Large screen breakpoint */
